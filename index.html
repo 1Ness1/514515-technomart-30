@@ -1,12 +1,182 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Техномарт</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 
-  </body>
+</head>
+
+<body>
+	<!-- max-width="940px"-->
+	<header>
+		<section class="main-menu">
+			<!-- bg - color: #293449  -->
+			<h2><a href="#">техномарт</a></h2> <!-- main logo  color: #EE3643-->
+			<a href="#">Поиск:</a> <!-- search -->
+			<ul>
+				<li><a href="#">Закладки</a></li> <!-- ::before icon book -->
+				<li><a href="#">Корзина</a></li> <!-- ::before icon cart -->
+				<li><a href="#">Оформить заказ</a></li> <!-- order color: #63A63E-->
+			</ul>
+		</section>
+		<!--	END MAIN MENU	-->
+		<h1>Компания «Техномарт»</h1> <!-- visibility: hidden -->
+		<section>
+			<div class="main-title">
+				<h2>Интернет-магазин строительных материалов и инструментов для ремонта</h2>
+			</div>
+			<div class="number">
+				<a href="tel:+78125550555">+7 (812) 555-05-55</a>
+				<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+			</div>
+			<div class="login-exit">
+				<a href="#">Войти</a>
+				<a href="#">Регистрация</a>
+			</div>
+		</section>
+		<!-- ///////////////	 пока не придумал названия для среднего блока menu	-->
+		<div class="sub-menu">
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Компания</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Спецпредложения</a></li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+		<!-- END SUB MENU		-->
+	</header>
+	<!-- END HEADER	-->
+	<main>
+		<div class="categories">
+			<ul>
+				<li>Материалы</li>
+				<li>Инструмент</li>
+				<li>Техника</li>
+				<li>Перфораторы</li>
+				<li>Скидки 50%</li>
+				<li>Доставка</li>
+			</ul>
+		</div>
+		<section class="popular-products">
+			<div>
+				<!-- products -->
+				<h2>Популярные товары:</h2>
+				<a href="#">Все популярные товары</a>
+			</div>
+			<ul>
+				<li>Перфоратор BOSCH BFG 9000</li> <!-- max-width / padding -->
+				<li>Перфоратор BOSCH BFG 3000</li>
+				<li>Перфоратор BOSCH BFG 6000</li>
+				<li>Перфоратор BOSCH BFG 2000</li>
+			</ul>
+		</section>
+		<section class="manufacturers">
+			<h2>Популярные производители:</h2>
+			<a href="#">Все производители</a>
+			<ul>
+				<li><a href=""><img src="#" alt="Компания Bosch"></a></li>
+				<li><a href=""><img src="#" alt="Компания Makita"></a></li>
+				<li><a href=""><img src="#" alt="Компания DeWalt"></a></li>
+				<li><a href=""><img src="#" alt="Компания Интерскол"></a></li>
+				<li><a href=""><img src="#" alt="Компания Hitachi"></a></li>
+				<li><a href=""><img src="#" alt="Компания LG"></a></li>
+				<li><a href=""><img src="#" alt="Компания Aeg power solution"></a></li>
+				<li><a href=""><img src="#" alt="Компания Metabo"></a></li>
+			</ul>
+		</section>
+		<section class="services">
+			<h2>Сервисы</h2>
+			<p>Хороший интернет-магазин отличается от плохого не только ценами!
+				<!-- br/ ставлю просто как идею, но скорее всего max-width -->
+				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+
+			<div class="main-services">
+				<h3><a href="#">Доставка</a></h3>
+				<h3><a href="#">Гарантия</a></h3>
+				<h3><a href="#">Кредит</a></h3>
+			</div>
+			<div class="delivery">
+				<h3>Доставка</h3>
+				<p>Мы с удовольствием доставим ваш товар прямо
+					<!--					-->
+					к вашему подъезду совершенно бесплатно!
+					<!--					-->
+					Ведь мы неплохо заработаем,
+					<!--						-->
+					поднимая его на ваш этаж!</p>
+			</div>
+			<div class="car">
+				<img src="#" alt="Машина!">
+			</div>
+		</section>
+		<section class="description">
+			<div class="about">
+				<h2>Компания «Техномарт»</h2>
+				<p>Настоящий мужской шоппинг начинается здесь!
+					Огромный выбор товаров для ремонта и строительства
+					не оставит равнодушными любителей сэкономить на
+					гастарбайтерах.</p>
+				<p>Мы можем доставить ваш товар в самые отдаленные точки России!
+					Техномарт работает со многими
+					транспортными компаниями:</p>
+				<ul>
+					<li>Деловые линии</li>
+					<li>Автотрейдинг</li>
+					<li>ЖелДорЭкспедиция</li>
+				</ul>
+				<a href="#">Подробнее о компании</a>
+
+			</div>
+			<div class="contacts">
+				<h2>Контакты</h2>
+				<p>Вы можете забрать товар сами,
+					заехав в наш офис:</p>
+				<!--	тут карта			-->
+				<a href="#">Заблудились? Напишите нам!</a>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="footer-menu">
+			<a href="#">Техномарт</a>
+			<p>г. Санкт-Петербург, ул. Б. Конюшенная,
+				д. 19/8 +7 (812) 555-05-55</p>
+		</div>
+		<div class="footer-menu__categories">
+			<ul>
+				<li><a href="#">Компания</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Материалы</a></li>
+				<li><a href="#">Техника</a></li>
+				<li><a href="#">Инструмент</a></li>
+				<li><a href="#">Спецпредложения</a></li>
+			</ul>
+		</div>
+		<div class="footer-menu__description">
+			<div>
+				<p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
+			</div>
+			<div>
+				<a href="#"><img src="#" alt="Ссылка на Vk"></a>
+				<a href="#"><img src="#" alt="Ссылка на Facebook"></a>
+				<a href="#"><img src="#" alt="Ссылка на Instagram"></a>
+			</div>
+			<div>
+				<p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+				<p>Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+			</div>
+		</div>
+
+	</footer>
+</body>
+
 </html>
