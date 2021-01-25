@@ -34,12 +34,14 @@
 			</div>
 
 			<div class="login-exit">
-				<form action="#">
-					<input type="search" placeholder="Равшан Джамшутович">
-				</form>
+				<a href="#">Равшан Джамшутович</a>
+				<a href="#"><img src="https://via.placeholder.com/20x17" alt=""></a>
 
-				<a href="#">Мои заказы</a>
-				<a href="#">Личный кабинет</a> <!-- ::before -->
+				<p>
+					<!--	обернул просто в пэшку, для наглядности			-->
+					<a href="#">Мои заказы</a>
+					<a href="#">Личный кабинет</a> <!-- ::before -->
+				</p>
 			</div>
 		</section>
 		<div class="sub-menu">
@@ -58,6 +60,7 @@
 	<main>
 		<div class="crumbs">
 			<ul>
+				<li><a href="index.html">#</a></li> <!-- домик с сылкой -->
 				<li><a href="#">каталог</a></li>
 				<li><a href="#">инструмент</a></li>
 				<li><a href="#">перфораторы</a></li>
@@ -68,39 +71,41 @@
 
 		<section class="filter">
 			<h2>Фильтр:</h2> <!-- fz13px ln18px 400  -->
-			<form action="#" method="post">
+			<form action="https://echo.htmlacademy.ru" method="post">
 				<fieldset>
 					<legend>Цена:</legend> <!-- fz17px ln30px 700 -->
 
 					<!--	не пойму, что из них нужно в h2, h3		-->
+					<div class="range-wrapper">
+						<div class="range-wrapper--line"></div>
+						<button class="range-wrapper--cyrcle"></button>
+						<button class="range-wrapper--cyrcle"></button>
+					</div>
 
-					<input type="range" min="0" max="30000">
-
-					<!--	я так понял, потом подкрутить значения через js от 0 до 300000, дабы видеть, на каком месте ползунок			-->
-
+					<!-- надеюсь я правильно понял					-->
 
 				</fieldset>
 				<fieldset>
 					<legend>Производители:</legend>
 					<ul>
 						<li>
-							<input type="checkbox" name="bosch" id="filter-bosch" checked>
+							<input type="checkbox" name="bosch" id="filter-bosch" checked value="a1">
 							<label for="filter-bosch">Bosch</label>
 						</li>
 						<li>
-							<input type="checkbox" name="interskol" id="filter-interskol">
+							<input type="checkbox" name="interskol" id="filter-interskol" value="a2">
 							<label for="filter-interskol">Интерскол</label>
 						</li>
 						<li>
-							<input type="checkbox" name="makita" id="filter-makita" checked>
+							<input type="checkbox" name="makita" id="filter-makita" checked value="a3">
 							<label for="filter-makita">Makita</label>
 						</li>
 						<li>
-							<input type="checkbox" name="dewalt" id="filter-dewalt">
+							<input type="checkbox" name="dewalt" id="filter-dewalt" value="a4">
 							<label for="filter-dewalt">Dewalt</label>
 						</li>
 						<li>
-							<input type="checkbox" name="hitachi" id="filter-hitachi">
+							<input type="checkbox" name="hitachi" id="filter-hitachi" value="a5">
 							<label for="filter-hitachi">Hitachi</label>
 						</li>
 					</ul>
@@ -121,89 +126,130 @@
 				<button type="submit">Показать</button>
 			</form>
 		</section>
+		.
 		<section class="sorting">
-			<h2>Сортировка:</h2>
-			<ul>
-				<!-- я так понял переключатели через js			-->
-				<li><a href="#">По цене</a></li>
-				<li><a href="#">По типу</a></li>
-				<li><a href="#">По функционалу</a></li>
-			</ul>
-		</section>
-		<!-- img 144x128		-->
-		<section class="product-curds">
-			<h2>Перфораторы</h2> <!-- visibility: hidden -->
-			<ul>
-				<li>
-					<!-- тут наверное проще обернуть div в a, но делаю как на скринкастах барбера			
-					типа такого 
-					<a href="#">
-						<div>
+			<div class="sorting-title">
+				<h2>Сортировка:</h2>
+				<ul>
+					<!-- я так понял переключатели через js			-->
+					<li><a href="#">По цене</a></li>
+					<li><a href="#">По типу</a></li>
+					<li><a href="#">По функционалу</a></li>
+				</ul>
+				<!-- img 144x128		-->
+			</div>
+			<div class="product-curds">
+				<h2>Перфораторы</h2> <!-- visibility: hidden -->
+				<ul>
+					<li>
+						<!-- тут наверное проще обернуть div в a, но делаю как на скринкастах барбера			
+						типа такого 
+						<a href="#">
+							<div>
+								<img src="https://via.placeholder.com/144x128" alt="#">
+
+							</div>
+						</a>
+						-->
+						<a href="#">
 							<img src="https://via.placeholder.com/144x128" alt="#">
-							
-						</div>
-					</a>
-					-->
-					<a href="#">
-						<img src="https://via.placeholder.com/144x128" alt="#">
-						<p>Перфоратор BOSCH BFG 6000</p>
+						</a>
+						<a href="#">
+							<p>Перфоратор BOSCH BFG 6000</p>
+						</a>
+						<!-- на всякий случай, тут не добавлял ссылки, если что потом просто оберну. 						-->
 						<s>30500 Р.</s> <!-- strike -->
 						<p>25500 Р.</p>
-					</a>
-					<a href="#">
-						<img src="https://via.placeholder.com/144x128" alt="#">
-						<p>Перфоратор BOSCH BFG 6000</p>
+
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://via.placeholder.com/144x128" alt="#">
+						</a>
+						<a href="#">
+							<p>Перфоратор BOSCH BFG 6000</p>
+						</a>
 						<s>30500 Р.</s> <!-- strike -->
 						<p>25500 Р.</p>
-					</a>
-					<a href="#">
-						<img src="https://via.placeholder.com/144x128" alt="#">
-						<p>Перфоратор BOSCH BFG 6000</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://via.placeholder.com/144x128" alt="#">
+						</a>
+						<a href="#">
+							<p>Перфоратор BOSCH BFG 6000</p>
+						</a>
 						<s>30500 Р.</s> <!-- strike -->
 						<p>25500 Р.</p>
-					</a>
-					<a href="#">
-						<img src="https://via.placeholder.com/144x128" alt="#">
-						<p>Перфоратор BOSCH BFG 6000</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://via.placeholder.com/144x128" alt="#">
+						</a>
+						<a href="#">
+							<p>Перфоратор BOSCH BFG 6000</p>
+						</a>
 						<s>22500 Р.</s> <!-- strike -->
 						<p>15500 Р.</p>
-					</a>
-					<a href="#">
-						<img src="https://via.placeholder.com/144x128" alt="#">
-						<p>Перфоратор BOSCH BFG 6000</p>
+
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://via.placeholder.com/144x128" alt="#">
+						</a>
+						<a href="#">
+							<p>Перфоратор BOSCH BFG 6000</p>
+						</a>
 						<s>30500 Р.</s> <!-- strike -->
 						<p>25500 Р.</p>
-					</a>
-					<a href="#">
-						<img src="https://via.placeholder.com/144x128" alt="#">
-						<p>Перфоратор BOSCH BFG 6000</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://via.placeholder.com/144x128" alt="#">
+						</a>
+						<a href="#">
+							<p>Перфоратор BOSCH BFG 6000</p>
+						</a>
 						<p>12500 Р.</p>
-					</a>
-					<a href="#">
-						<img src="https://via.placeholder.com/144x128" alt="#">
-						<p>Перфоратор BOSCH BFG 6000</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://via.placeholder.com/144x128" alt="#">
+						</a>
+						<a href="#">
+							<p>Перфоратор BOSCH BFG 6000</p>
+						</a>
 						<s>22500 Р.</s> <!-- strike -->
 						<p>15500 Р.</p>
-					</a>
-					<a href="#">
-						<img src="https://via.placeholder.com/144x128" alt="#">
-						<p>Перфоратор BOSCH BFG 6000</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://via.placeholder.com/144x128" alt="#">
+						</a>
+						<a href="#">
+							<p>Перфоратор BOSCH BFG 6000</p>
+						</a>
 						<s>30500 Р.</s> <!-- strike -->
 						<p>25500 Р.</p>
-					</a>
-					<a href="#">
-						<img src="https://via.placeholder.com/144x128" alt="#">
-						<p>Перфоратор BOSCH BFG 6000</p>
+
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://via.placeholder.com/144x128" alt="#">
+						</a>
+						<a href="#">
+							<p>Перфоратор BOSCH BFG 6000</p>
+						</a>
 						<p>12500 Р.</p>
-					</a>
-				</li>
-			</ul>
-			<ul>
-				<li><a href="#">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li><a href="#">Следующая</a></li>
-			</ul>
+					</li>
+				</ul>
+				<ul>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">Следующая</a></li>
+				</ul>
+			</div>
 		</section>
 		<section class="about-punchers">
 			<h2>Пара слов о перфораторах</h2>
@@ -249,6 +295,4 @@
 		</div>
 
 	</footer>
-</body>
-
-</html>
+</body></html>
