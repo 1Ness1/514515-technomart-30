@@ -1,31 +1,32 @@
 .range-wrapper--cyrcle {
-	border-radius: 50%;
-	height: 20px;
-	width: 22px;
+  border-radius: 50%;
+  height: 20px;
+  width: 22px;
 }
 
 
 body {
-	background-color: #F5F5F5;
-	/*	чтобы видеть все иконки*/
+  background-color: #F5F5F5;
+  /*	чтобы видеть все иконки*/
 }
 
 li {
-	list-style: none;
+  list-style: none;
 }
 
 
-/* 
+
 input[type="checkbox"] + span {
- position: absolute; /* Абсолютное позиционирование */
+  position: absolute;
+  /* Абсолютное позиционирование
 left: 0;
 top: 0;
 width: 100%;
 height: 100%;
 background: url(...) no-repeat;
-/* Фоновый рисунок */
+Фоновый рисунок
 cursor: pointer;
-/* Курсор в виде руки */
+ Курсор в виде руки
 }
 
 ///////////
