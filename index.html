@@ -9,6 +9,8 @@
   <!-- fav icon	 -->
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -121,7 +123,7 @@
         <li class="categories-item">
           <h3>Перфораторы</h3>
           <p>Настоящие мужские игрушки</p>
-          <a href="#">Открыть каталог</a>
+          <a href="#" class="button">Открыть каталог</a>
           <!-- эту li я похоже оформил неправильно, т.к. слайдер должен перелистывать div (!вроде бы!) со всем содержимым. Или я просто внутри li сделаю 2 div, которые и будут листаться, но пока так					-->
           <img src="img/perforators.jpg" alt="#" width="59" height="71">
           <!--					<img src="img/drill.jpg" alt="#"> второе изображение-->
@@ -143,31 +145,36 @@
       <div class="pruducts-title">
         <!-- products -->
         <h2>Популярные товары:</h2>
-        <a href="catalog.html">Все популярные товары</a>
+        <a href="catalog.html" class="button">Все популярные товары</a>
       </div>
       <!-- создать div, добавить img 			-->
       <ul class="products-list">
         <li class="products-item">
           <img src="img/item-2.png" alt="#" width="184" height="164">
           <h3>Перфоратор BOSCH BFG 9000</h3>
+          <a href="#" class="button">25500 Р.</a>
         </li> <!-- max-width / padding -->
         <li class="products-item">
           <img src="img/item-1.png" alt="#" width="184" height="164">
           <h3>Перфоратор BOSCH BFG 3000</h3>
+          <a href="#" class="button">15500 Р.</a>
         </li>
         <li class="products-item">
           <img src="img/item-1.png" alt="#" width="184" height="164">
           <h3>Перфоратор BOSCH BFG 6000</h3>
+          <a href="#" class="button">25500 Р.</a>
         </li>
         <li class="products-item">
           <img src="img/item-1.png" alt="#" width="184" height="164">
           <h3>Перфоратор BOSCH BFG 2000</h3>
+          <a href="#" class="button">12500 Р.</a>
         </li>
       </ul>
     </section>
+
     <section class="manufacturers">
       <h2>Популярные производители:</h2>
-      <a href="#">Все производители</a>
+      <a href="#" class="button">Все производители</a>
       <ul class="manufacturers-list">
         <li class="manufacturers-item"><a href="#"><img src="img/bosch.png" alt="Компания Bosch" width="126" height="37"></a></li>
         <li class="manufacturers-item"><a href="#"><img src="img/makita.png" alt="Компания Makita" width="123" height="40"></a></li>
@@ -179,6 +186,7 @@
         <li class="manufacturers-item"><a href="#"><img src="img/metabo.png" alt="Компания Metabo" width="205" height="70"></a></li>
       </ul>
     </section>
+
     <section class="services">
       <h2>Сервисы</h2>
       <p>Хороший интернет-магазин отличается от плохого не только ценами!
@@ -190,6 +198,7 @@
         <h3><a href="#">Гарантия</a></h3>
         <h3><a href="#">Кредит</a></h3>
       </div>
+
       <div class="delivery">
         <h3>Доставка</h3>
         <p>Мы с удовольствием доставим ваш товар прямо
@@ -200,10 +209,12 @@
           <!--						-->
           поднимая его на ваш этаж!</p>
       </div>
+
       <div class="car">
         <img src="img/car.png" alt="Машина!" width="468" height="260">
       </div>
     </section>
+
     <section class="description">
       <div class="about">
         <h2>Компания «Техномарт»</h2>
@@ -219,20 +230,21 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="#">Подробнее о компании</a>
 
+        <a href="#" class="button">Подробнее о компании</a>
       </div>
+
       <div class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами,
           заехав в наш офис:</p>
         <!--	тут карта	-->
-        <a href="#">Заблудились? Напишите нам!</a>
+        <a href="#" c>Заблудились? Напишите нам!</a>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="main-footer">
     <div class="footer-menu">
       <a href="#">Техномарт</a>
       <p>г. Санкт-Петербург, ул. Б. Конюшенная,
@@ -254,7 +266,7 @@
     </div>
 
     <div class="footer-copyright">
-      <div>
+      <div class="copyright">
         <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
       </div>
       <div class="socials">
@@ -264,9 +276,9 @@
           <a href="#" class="socials-item"><img src="img/icon-insta.svg" alt="Ссылка на Instagram" width="21" height="21"></a>
         </ul>
       </div>
-      <div>
-        <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-        <p>Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+      <div class="connections">
+        <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru" class="conntections-link">mail@htmlacademy.ru</a></p>
+        <p>Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss" class="conntections-link">htmlacademy.ru</a></p>
       </div>
     </div>
 
