@@ -8,6 +8,7 @@
   --basic-extra-blue: #293449;
   --basic-light-blue: #3BBCE3;
   --basic-red: #EE3643;
+  --basic-error: #BA2732;
   --basic-green: #63A63E;
   --basic-light-green: #8ED78F;
   --basic-dark-orange: #FFBF47;
@@ -15,8 +16,101 @@
   --basic-dark-yellow: #FFD180;
   --basic-purple: #DC91D8;
   --basic-light-purple: #F7F3EC;
+  --basic-gold: #FFDA96;
 }
 
+
+/*/// VAR COLORS ///*/
+
+.c-black {
+  color: var(--basic-black);
+}
+
+.c-blue {
+  color: var(--basic-blue);
+}
+
+.c-white {
+  color: var(--basic-white);
+}
+
+.c-gold {
+  color: var(--basic-gold);
+}
+
+.b-dark-orange {
+  background-color: var(--basic-dark-orange);
+}
+
+.b-extra-blue {
+  background-color: var(--basic-extra-blue));
+}
+
+.b-light-blue {
+  background-color: var(--basic-light-blue);
+}
+
+.b-purple {
+  background-color: var(--basic-purple);
+}
+
+.b-light-purple {
+  background-color: var(--basic-light-purple);
+}
+
+.b-green {
+  background-color: var(--basic-light-green)
+}
+
+.b-orange {
+  background-color: var(--basic-orange);
+}
+
+.b-white-op {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*/// CLASS COLORS ///*/
+
+body {
+  /*	чтобы видеть все иконки*/
+  min-width: 940px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+  color: var(--basic-white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  color: var(--basic-extra-blue);
+}
+
+
+/* нужно внести все похожие теги с их цветами и размерами сюда!*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+/*/// BY TEG ///*/
 
 
 .range-wrapper--cyrcle {
@@ -26,53 +120,229 @@
 }
 
 
-body {
-  background-color: #F5F5F5;
-  /*	чтобы видеть все иконки*/
+
+.main-header {
+  color: var(--basic-white);
+  background-color: #F1F5F7;
+  /*  сделал чуть больше, чем нужно, дабы визуально отделить */
 }
 
-li {
-  list-style: none;
+.main-logo {}
+
+.main-header-logo {
+  background-color: var(--basic-red);
+  border-bottom: 5px solid var(--basic-error);
+}
+
+.main-navigation {
+  background-color: var(--basic-extra-blue);
 }
 
 
+/*/// MAIN CLASSES ///*/
+
+.header-title {
+  color: var(--basic-red);
+  max-width: 200px;
+}
+
+.order {
+  background-color: #63A63E;
+  width: 150px;
+  text-align: center;
+}
 
 
-#FFBF47;
-#3BBCE3;
-#DC91D8;
-#8ED78F;
-#FFC047;
-#F9F5F0;
-#F1F5F7;
-#FFDA96 #D7DCDE;
-#A9A9A9 #C5C5C5;
+.number {
+  max-width: 270px;
+  text-align: center;
+}
+
+.number-link {
+  border: 3px solid white;
+
+}
+
+.number-link a {
+  color: var(--basic-red);
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.number-title {
+  color: var(--basic-blue);
+}
+
+.login-button div {
+  background-color: var(--basic-white);
+  max-width: 150px;
+  margin: 5px;
+  text-align: center;
+}
+
+/*/// HEADER CLASSES ///*/
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: var(--basic-red);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.fz13 {
+  font-size: 13px;
+}
+
+.fz14 {
+  font-size: 14px;
+}
+
+.fz16 {
+  font-size: 16px;
+}
+
+.lh23 {
+  line-height: 23px;
+}
+
+.fz18 {
+  font-size: 18px;
+}
+
+.fz30 {
+  font-size: 30px;
+}
 
 
+.ln24 {
+  line-height: 24px;
+}
+
+.lh30 {
+  line-height: 30px;
+}
+
+
+.tt-up {
+  text-transform: uppercase;
+}
+
+
+/*/// GENERAL CLASSES ///*/
+
+
+
+/* тут просто обобщил максимальный размер, ниже укажу нужный*/
+
+
+.nav-list {
+  background-color: var(--basic-blue);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 5px solid var(--basic-extra-blue);
+}
+
+.categories-item {
+  width: 300px;
+  height: 125px;
+}
+
+.perforators-slider {
+  background: url("../img/perforators.jpg") no-repeat center center;
+  height: 266px;
+  width: 620px;
+}
+
+.products-title {
+  background-color: var(--basic-light-purple);
+  color: var(--basic-extra-blue);
+  font-family: "Cuprum"sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.products-item {
+  border: 1px solid #EAEAEA;
+  color: var(--basic-black);
+  width: 220px;
+  height: 320px;
+  text-align: center;
+}
+
+.manufacturers-item {
+  border: 1px solid #EAEAEA;
+  width: 220px;
+  height: 150px;
+  text-align: center;
+}
+
+.services {
+  color: var(--basic-black);
+  height: 520px;
+  background-color: #F1F5F7;
+}
+
+.description {}
+
+
+.footer-menu {
+  background-color: var(--basic-blue);
+}
+
+.footer-copyright {
+  background-color: var(--basic-extra-blue);
+}
+
+.tab-link {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.tab-link:hover {
+  color: var(--basic-blue);
+  background-color: var(--basic-white);
+}
+
+/* Тут опять же цвета перенести*/
+/*
+
+.d-flex {
+  display: flex;
+}
+*/
 
 
 /*
 
 input[type="checkbox"] + span {
   position: absolute;
-   Абсолютное позиционирование
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-background: url(...) no-repeat;
-Фоновый рисунок
-cursor: pointer;
- Курсор в виде руки
+  Абсолютное позиционирование left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(...) no-repeat;
+  Фоновый рисунок cursor: pointer;
+  Курсор в виде руки
 }
 
 ///////////
 
 input[type="checkbox"]:checked + span {
-	background-position: 0 -26px;
+  background-position: 0 -26px;
 
 }
 
 
-И тоже самое для радиобаттона
+И тоже самое для радиобаттона */
 */
