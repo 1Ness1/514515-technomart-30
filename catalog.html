@@ -16,305 +16,423 @@
 </head>
 <!-- END HEAD-->
 
-<body>
+<body class="inner-page">
   <header class="main-header">
-    <section class="main-menu">
-      <!-- bg - color: #293449  -->
-      <h2><a href="#">техномарт</a></h2> <!-- main logo  color: #EE3643-->
-      <img src="img/icon-search.svg" alt="" width="17" height="17">
-      <a href="#">Поиск:</a> <!-- search -->
-      <ul>
 
-        <li>
-          <img src="img/icon-bookmark.svg" alt="#" width="14" height="16"> <!-- icon-bookmark/ opacity 30% -->
-          <a href="#">Закладки</a>
-        </li>
-        <li>
-          <img src="img/icon-cart.svg" alt="#" width="15" height="15">
-          <a href="#">Корзина</a>
-        </li>
-        <li>
-          <a href="#">Оформить заказ</a>
-        </li> <!-- order color: #63A63E-->
-      </ul>
+    <section class="main-navigation fz24 lh24 d-flex">
+      <div class="container">
+
+        <div class="main-logo">
+          <a href="index.html" class="main-header-logo">
+            <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт">
+          </a>
+        </div>
+        <div class="search-link">
+          <a href="#"><img src="img/icon-search.svg" alt="" width="17" height="17" class="search-svg"> Поиск:</a>
+        </div>
+
+        <div>
+          <ul class="site-menu d-flex">
+            <li class="menu-item">
+
+            </li>
+            <li class="menu-item">
+              <img src="img/icon-bookmark.svg" alt="#" width="14" height="16"> <!-- icon-bookmark/ opacity 30% -->
+              <a href="#">Закладки:</a>
+            </li>
+            <li class="menu-item">
+              <img src="img/icon-cart.svg" alt="#" width="15" height="15">
+              <a href="#">Корзина:</a>
+            </li>
+            <li class="menu-item order">
+              <a href="#">Оформить заказ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
+
+
     <!--	END MAIN MENU	-->
-    <h1>Компания «Техномарт»</h1> <!-- visibility: hidden -->
-    <section>
-      <div class="main-title">
-        <h2>Интернет-магазин строительных материалов и инструментов для ремонта</h2>
-      </div>
-      <div class="number">
-        <img src="img/icon-phone.svg" alt="#" width="17" height="18">
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      </div>
-      <div class="login-exit">
-        <img src="img/icon-user.svg" alt="#" width="20" height="18">
-        <a href="#">Равшан Джамшутович</a>
+    <section class="header-info">
 
-        <a href="#"><img src="img/icon-logout.svg" alt="#" width="20" height="17"></a>
+      <div class="container">
+        <h1 class="visibility-hidden">Компания «Техномарт»</h1>
+        <!-- visibility: hidden -->
+        <div class="header-title">
+          <p><i>Интернет-магазин строительных материалов и инструментов для ремонта</i></p>
+        </div>
 
-        <p>
-          <!--	обернул просто в пэшку, для наглядности			-->
-          <a href="#">Мои заказы</a>
-          <a href="#">Личный кабинет</a> <!-- ::before -->
+        <div class="number">
+          <div class="number-link">
+            <img src="img/icon-phone.svg" alt="#" width="17" height="18">
+            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </div>
+          <p class="number-title fz14 lh24">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+
+        <div class="login-button">
+          <div class="login-link">
+            <img src="img/icon-user.svg" alt="Иконка Юзера" width="20" height="17">
+            <a href="#" class="c-black">Равшан Джамшутович</a>
+            <img src="img/icon-logout.svg" alt="Иконка выхода">
+          </div>
+          <a href="#" class="c-blue fz16 lh18">Мои заказы</a>
+          <a href="#" class="c-blue fz16 lh18">Личный кабинет</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ///////////////	 пока не придумал названия для среднего блока menu	-->
+    <div class="container">
+      <nav class="nav-cat">
+        <div class="container">
+          <!--	думаю, тут установить якоря, дабы удобно перемещаться по сайту, пусть он и небольшой	-->
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Компания</a>
+            </li>
+            <li class="nav-item">
+              <a href="catalog.html">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Новости</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Спецпредложения</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- END SUB MENU		-->
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="crumbs">
+
+        <ul>
+          <li>
+            <a href="index.html"><img src="img/icon-home.svg" alt="#"></a>
+          </li> <!-- домик с сылкой -->
+          <li>
+            <a href="#" class="c-black tt-up fz13 lh18">каталог</a>
+          </li>
+          <li>
+            <a href="#" class="c-black tt-up fz13 lh18">инструмент</a></li>
+          <li>
+            <a href="#" class="c-black tt-up fz13 lh18">перфораторы</a>
+          </li>
+        </ul>
+      </div>
+
+      <h1 class="b-light-white c-blue tt-up fz30 lh30 fw400">перфораторы</h1> <!-- padding -->
+
+      <section class="filter">
+        <h2 class="b-light-purple fz13 lh18 tt-up ff-pt">Фильтр:</h2> <!-- fz13px ln18px 400  -->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend class="fz17 lh30 fw700 tt-up c-black
+             ff-pt">Цена:</legend> <!-- fz17px ln30px 700 -->
+
+            <!--	не пойму, что из них нужно в h2, h3		-->
+            <div class="range-wrapper b-light-purple">
+              <a href="#">
+                <img src="img/filter-button.svg" alt="#" width="20" height="20">
+              </a>
+              <div class="range-wrapper__line"></div>
+              <a href="#">
+                <img src="img/filter-button.svg" alt="#" width="20" height="20">
+              </a>
+            </div>
+
+            <!-- надеюсь я правильно понял					-->
+
+          </fieldset>
+          <fieldset>
+            <legend class="c-black fz17 lh30 fw700 tt-up ff-pt">Производители:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="bosch" id="filter-bosch" checked value="a1">
+                <label for="filter-bosch" class="fz15 lh19 c-black tt-up ff-pt">Bosch</label>
+              </li>
+              <li>
+                <input type="checkbox" name="interskol" id="filter-interskol" value="a2">
+                <label for="filter-interskol" class="fz15 lh19 c-black tt-up ff-pt">Интерскол</label>
+              </li>
+              <li>
+                <input type="checkbox" name="makita" id="filter-makita" checked value="a3">
+                <label for="filter-makita" class="fz15 lh19 c-black tt-up ff-pt">Makita</label>
+              </li>
+              <li>
+                <input type="checkbox" name="dewalt" id="filter-dewalt" value="a4">
+                <label for="filter-dewalt" class="fz15 lh19 c-black tt-up ff-pt">Dewalt</label>
+              </li>
+              <li>
+                <input type="checkbox" name="hitachi" id="filter-hitachi" value="a5">
+                <label for="filter-hitachi" class="fz15 lh19 c-black tt-up ff-pt">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="c-black fz17 lh30 fw700 tt-up ff-pt">Питание:</legend>
+            <ul>
+              <li>
+                <input type="radio" name="power" value="battery" id="filter-battery" checked>
+                <label for="filter-battery" class="fz15 lh19 c-black tt-up ff-pt">Аккумуляторные</label>
+              </li>
+              <li>
+                <input type="radio" name="power" value="mains" id="filter-mains">
+                <label for="filter-mains" class="fz15 lh19 c-black tt-up ff-pt">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="fz13 lh18 c-black tt-up ff-pt">Показать</button>
+        </form>
+      </section>
+      .
+      <section class="sorting">
+        <div class="sorting-title b-light-purple">
+          <h2 class="fz13 lh18 c-black ff-pt tt-up">Сортировка:</h2>
+          <ul>
+            <!-- я так понял переключатели через js			-->
+            <li><a href="#" class="c-red tt-up fz13 lh18 ff-pt ">По цене</a></li>
+            <li><a href="#" class="c-black-op tt-up fz13 lh18 ff-pt border-b-d">По типу</a></li>
+            <li><a href="#" class="c-black-op tt-up fz13 lh18 ff-pt border-b-d">По функционалу</a></li>
+          </ul>
+          <!-- img 144x128		-->
+        </div>
+        <div class="product-curds">
+          <h2>Перфораторы</h2> <!-- visibility: hidden -->
+          <ul>
+            <li class="products-item">
+              <a href="#">
+                <img src="img/item-1.png" alt="#" width="144" height="128">
+              </a>
+              <a href="#" class="c-black fz18 lh20 fw700 ff-pt">
+                <p>Перфоратор BOSCH BFG 6000</p>
+              </a>
+              <!-- на всякий случай, тут не добавлял ссылки, если что потом просто оберну. 						-->
+              <s>30500 Р.</s>
+              <p>
+                <!-- strike -->
+                <a href="#" class="button">25500 Р.</a>
+              </p>
+
+            </li>
+            <li class="products-item">
+              <a href="#">
+                <img src="img/item-1.png" alt="#" width="144" height="128">
+              </a>
+              <a href="#" class="c-black fz18 lh20 fw700 ff-pt">
+                <p>Перфоратор BOSCH BFG 6000</p>
+              </a>
+              <s>30500 Р.</s>
+              <p>
+                <!-- strike -->
+                <a href="#" class="button">25500 Р.</a>
+              </p>
+
+            </li>
+            <li class="products-item">
+              <a href="#">
+                <img src="img/item-1.png" alt="#" width="144" height="128">
+              </a>
+              <a href="#" class="c-black fz18 lh20 fw700 ff-pt">
+                <p>Перфоратор BOSCH BFG 6000</p>
+              </a>
+              <s>30500 Р.</s>
+              <p>
+                <!-- strike -->
+                <a href="#" class="button">25500 Р.</a>
+              </p>
+
+            </li>
+            <li class="products-item">
+              <a href="#">
+                <img src="img/item-1.png" alt="#" width="144" height="128">
+              </a>
+              <a href="#" class="c-black fz18 lh20 fw700 ff-pt">
+                <p>Перфоратор BOSCH BFG 6000</p>
+              </a>
+              <s>30500 Р.</s>
+              <p>
+                <!-- strike -->
+                <a href="#" class="button">25500 Р.</a>
+              </p>
+
+            </li>
+            <li class="products-item">
+              <a href="#">
+                <img src="img/item-1.png" alt="#" width="144" height="128">
+              </a>
+              <a href="#" class="c-black fz18 lh20 fw700 ff-pt">
+                <p>Перфоратор BOSCH BFG 6000</p>
+              </a>
+              <s>30500 Р.</s>
+              <p>
+                <!-- strike -->
+                <a href="#" class="button">25500 Р.</a>
+              </p>
+
+            </li>
+            <li class="products-item">
+              <a href="#">
+                <img src="img/item-1.png" alt="#" width="144" height="128">
+              </a>
+              <a href="#" class="c-black fz18 lh20 fw700 ff-pt">
+                <p>Перфоратор BOSCH BFG 6000</p>
+              </a>
+              <s>30500 Р.</s>
+              <p>
+                <!-- strike -->
+                <a href="#" class="button">25500 Р.</a>
+              </p>
+
+            </li>
+            <li class="products-item">
+              <a href="#">
+                <img src="img/item-1.png" alt="#" width="144" height="128">
+              </a>
+              <a href="#" class="c-black fz18 lh20 fw700 ff-pt">
+                <p>Перфоратор BOSCH BFG 6000</p>
+              </a>
+              <s>30500 Р.</s>
+              <p>
+                <!-- strike -->
+                <a href="#" class="button">25500 Р.</a>
+              </p>
+
+            </li>
+            <li class="products-item">
+              <a href="#">
+                <img src="img/item-1.png" alt="#" width="144" height="128">
+              </a>
+              <a href="#" class="c-black fz18 lh20 fw700 ff-pt">
+                <p>Перфоратор BOSCH BFG 6000</p>
+              </a>
+              <s>30500 Р.</s>
+              <p>
+                <!-- strike -->
+                <a href="#" class="button">25500 Р.</a>
+              </p>
+
+            </li>
+            <li class="products-item">
+              <a href="#">
+                <img src="img/item-1.png" alt="#" width="144" height="128">
+              </a>
+              <a href="#" class="c-black fz18 lh20 fw700 ff-pt">
+                <p>Перфоратор BOSCH BFG 6000</p>
+              </a>
+              <s>30500 Р.</s>
+              <p>
+                <!-- strike -->
+                <a href="#" class="button">25500 Р.</a>
+              </p>
+            </li>
+          </ul>
+          <ul>
+            <li><a href="#" class="c-black switch-button ">1</a></li>
+            <li><a href="#" class="c-black switch-button ">2</a></li>
+            <li><a href="#" class="c-black switch-button ">3</a></li>
+            <li><a href="#" class="c-black switch-button tt-up ff-pt ">Следующая</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <section class="about-punchers b-light-white">
+      <div class="container">
+        <h2 class="tt-up fz30 lh30 c-black ">Пара слов о перфораторах</h2>
+        <p class="c-black fz13 lh24 ff-pt">
+          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+          В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
         </p>
       </div>
     </section>
-    <div class="sub-menu">
-      <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Компания</a></li>
-        <li><a href="#">Каталог</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Спецпредложения</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </div>
-    <!-- END SUB MENU		-->
-  </header>
-  <main>
-    <div class="crumbs">
-      <ul>
-        <li><a href="index.html"><img src="img/icon-home.svg" alt="#"></a></li> <!-- домик с сылкой -->
-        <li><a href="#">каталог</a></li>
-        <li><a href="#">инструмент</a></li>
-        <li><a href="#">перфораторы</a></li>
-      </ul>
-    </div>
 
-    <h1>перфораторы</h1> <!-- padding -->
-
-    <section class="filter">
-      <h2>Фильтр:</h2> <!-- fz13px ln18px 400  -->
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
-          <legend>Цена:</legend> <!-- fz17px ln30px 700 -->
-
-          <!--	не пойму, что из них нужно в h2, h3		-->
-          <div class="range-wrapper">
-            <a href="#">
-              <img src="img/filter-button.svg" alt="#" width="20" height="20">
-            </a>
-            <div class="range-wrapper--line"></div>
-            <a href="#">
-              <img src="img/filter-button.svg" alt="#" width="20" height="20">
-            </a>
-          </div>
-
-          <!-- надеюсь я правильно понял					-->
-
-        </fieldset>
-        <fieldset>
-          <legend>Производители:</legend>
-          <ul>
-            <li>
-              <input type="checkbox" name="bosch" id="filter-bosch" checked value="a1">
-              <label for="filter-bosch">Bosch</label>
-            </li>
-            <li>
-              <input type="checkbox" name="interskol" id="filter-interskol" value="a2">
-              <label for="filter-interskol">Интерскол</label>
-            </li>
-            <li>
-              <input type="checkbox" name="makita" id="filter-makita" checked value="a3">
-              <label for="filter-makita">Makita</label>
-            </li>
-            <li>
-              <input type="checkbox" name="dewalt" id="filter-dewalt" value="a4">
-              <label for="filter-dewalt">Dewalt</label>
-            </li>
-            <li>
-              <input type="checkbox" name="hitachi" id="filter-hitachi" value="a5">
-              <label for="filter-hitachi">Hitachi</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Питание:</legend>
-          <ul>
-            <li>
-              <input type="radio" name="power" value="battery" id="filter-battery" checked>
-              <label for="filter-battery">Аккумуляторные</label>
-            </li>
-            <li>
-              <input type="radio" name="power" value="mains" id="filter-mains">
-              <label for="filter-mains">Сетевые</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button type="submit">Показать</button>
-      </form>
-    </section>
-    .
-    <section class="sorting">
-      <div class="sorting-title">
-        <h2>Сортировка:</h2>
-        <ul>
-          <!-- я так понял переключатели через js			-->
-          <li><a href="#">По цене</a></li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По функционалу</a></li>
-        </ul>
-        <!-- img 144x128		-->
-      </div>
-      <div class="product-curds">
-        <h2>Перфораторы</h2> <!-- visibility: hidden -->
-        <ul>
-          <li>
-            <!-- тут наверное проще обернуть div в a, но делаю как на скринкастах барбера
-						типа такого
-						<a href="#">
-							<div>
-								<img src="https://via.placeholder.com/144x128" alt="#">
-
-							</div>
-						</a>
-						-->
-            <a href="#">
-              <img src="img/item-1.png" alt="#" width="144" height="128">
-            </a>
-            <a href="#">
-              <p>Перфоратор BOSCH BFG 6000</p>
-            </a>
-            <!-- на всякий случай, тут не добавлял ссылки, если что потом просто оберну. 						-->
-            <s>30500 Р.</s> <!-- strike -->
-            <p>25500 Р.</p>
-
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/item-1.png" alt="#" width="144" height="128">
-            </a>
-            <a href="#">
-              <p>Перфоратор BOSCH BFG 6000</p>
-            </a>
-            <s>30500 Р.</s> <!-- strike -->
-            <p>25500 Р.</p>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/item-1.png" alt="#" width="144" height="128">
-            </a>
-            <a href="#">
-              <p>Перфоратор BOSCH BFG 6000</p>
-            </a>
-            <s>30500 Р.</s> <!-- strike -->
-            <p>25500 Р.</p>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/item-1.png" alt="#" width="144" height="128">
-            </a>
-            <a href="#">
-              <p>Перфоратор BOSCH BFG 6000</p>
-            </a>
-            <s>22500 Р.</s> <!-- strike -->
-            <p>15500 Р.</p>
-
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/item-1.png" alt="#" width="144" height="128">
-            </a>
-            <a href="#">
-              <p>Перфоратор BOSCH BFG 6000</p>
-            </a>
-            <s>30500 Р.</s> <!-- strike -->
-            <p>25500 Р.</p>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/item-1.png" alt="#" width="144" height="128">
-            </a>
-            <a href="#">
-              <p>Перфоратор BOSCH BFG 6000</p>
-            </a>
-            <p>12500 Р.</p>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/item-1.png" alt="#" width="144" height="128">
-            </a>
-            <a href="#">
-              <p>Перфоратор BOSCH BFG 6000</p>
-            </a>
-            <s>22500 Р.</s> <!-- strike -->
-            <p>15500 Р.</p>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/item-1.png" alt="#" width="144" height="128">
-            </a>
-            <a href="#">
-              <p>Перфоратор BOSCH BFG 6000</p>
-            </a>
-            <s>30500 Р.</s> <!-- strike -->
-            <p>25500 Р.</p>
-
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/item-1.png" alt="#" width="144" height="128">
-            </a>
-            <a href="#">
-              <p>Перфоратор BOSCH BFG 6000</p>
-            </a>
-            <p>12500 Р.</p>
-          </li>
-        </ul>
-        <ul>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">Следующая</a></li>
-        </ul>
-      </div>
-    </section>
-    <section class="about-punchers">
-      <h2>Пара слов о перфораторах</h2>
-      <p>
-        Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
-        В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-      </p>
-    </section>
   </main>
-  <footer>
+  <footer class="main-footer">
     <div class="footer-menu">
-      <a href="#">Техномарт</a>
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная,
-        д. 19/8 +7 (812) 555-05-55</p>
-    </div>
-    <div class="footer-menu__categories">
-      <ul>
-        <li><a href="#">Компания</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакты</a></li>
-        <li><a href="#">Материалы</a></li>
-        <li><a href="#">Техника</a></li>
-        <li><a href="catalog.html">Инструмент</a></li>
-        <li><a href="#">Спецпредложения</a></li>
-      </ul>
-    </div>
-    <div class="footer-menu__description">
-      <div>
-        <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
-      </div>
-      <div>
-        <a href="#"><img src="img/icon-vk.svg" alt="Ссылка на Vk" width="25" height="15"></a>
-        <a href="#"><img src="img/icon-fb.svg" alt="Ссылка на Facebook" width="12" height="22"></a>
-        <a href="#"><img src="img/icon-insta.svg" alt="Ссылка на Instagram" width="21" height="21"></a>
-      </div>
-      <div>
-        <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-        <p>Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
-      </div>
-    </div>
+      <div class="container">
 
+        <div class="footer-contacts">
+          <a href="#" class="main-header-logo">
+            <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт">
+          </a>
+          <p class="fz18 lh24 ">г. Санкт-Петербург, ул. Б. Конюшенная,
+            д. 19/8 +7 (812) 555-05-55</p>
+
+        </div>
+        <div class="footer-categories">
+          <ul>
+            <li class="footer-categories__item">
+              <a href="#">Компания</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="#">Новости</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="catalog.html">Каталог</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="#">Контакты</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="#" class="c-gold">Материалы</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="#" class="c-gold">Техника</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="catalog.html" class="c-gold">Инструмент</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="#" class="c-gold">Спецпредложения</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-copyright c-white">
+      <div class="container">
+        <div class="copyright fz16 lh18">
+          <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
+        </div>
+        <div class="socials">
+          <ul class="socials-list">
+            <li>
+              <a href="#" class="socials-item"><img src="img/icon-vk.svg" alt="Ссылка на Vk" width="25" height="15"></a>
+            </li>
+            <li><a href="#" class="socials-item"><img src="img/icon-fb.svg" alt="Ссылка на Facebook" width="12" height="22"></a>
+            </li>
+            <li><a href="#" class="socials-item"><img src="img/icon-insta.svg" alt="Ссылка на Instagram" width="21" height="21"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="connections">
+          <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru" class="conntections-link c-gold">mail@htmlacademy.ru</a></p>
+          <p>Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss" class="conntections-link c-gold">htmlacademy.ru</a></p>
+        </div>
+      </div>
+    </div>
+    </div>
   </footer>
-</body></html>
+</body>
+
+</html>
