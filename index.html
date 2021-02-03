@@ -1,255 +1,370 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
-	<link rel="icon" href="favicon.ico"> <!-- 32x32 -->
-	<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-	<link rel="apple-touch-icon" href="img/apple.png"> <!-- 180x180-->
-	<link rel="manifest" href="img/manifest.webmanifest">
-	<!-- fav icon	 -->
-	<meta charset="utf-8">
-	<title>HTML Academy: Техномарт</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32x32 -->
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple.png"> <!-- 180x180-->
+  <link rel="manifest" href="img/manifest.webmanifest">
+  <!-- fav icon	 -->
+  <meta charset="utf-8">
+  <title>HTML Academy: Техномарт</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-<body>
-	<!-- max-width="940px"-->
-	<header>
-		<section class="main-menu">
-			<!-- bg - color: #293449  -->
-			<h2><a href="#">техномарт</a></h2> <!-- main logo  color: #EE3643-->
-			<img src="img/icon-search.svg" alt="" width="17" height="17">
-			<a href="#">Поиск:</a> <!-- search -->
-			<ul>
+<body class="page-body">
+  <!-- max-width="940px"-->
+  <header class="main-header">
 
-				<li>
-					<img src="img/icon-bookmark.svg" alt="#" width="14" height="16"> <!-- icon-bookmark/ opacity 30% -->
-					<a href="#">Закладки</a>
-				</li>
-				<li>
-					<img src="img/icon-cart.svg" alt="#" width="15" height="15">
-					<a href="#">Корзина</a>
-				</li>
-				<li>
-					<a href="#">Оформить заказ</a>
-				</li> <!-- order color: #63A63E-->
-			</ul>
-		</section>
-		<!--	END MAIN MENU	-->
-		<h1>Компания «Техномарт»</h1> <!-- visibility: hidden -->
-		<section>
-			<div class="main-title">
-				<h2>Интернет-магазин строительных материалов и инструментов для ремонта</h2>
-			</div>
-			<div class="number">
-				<img src="img/icon-phone.svg" alt="#" width="17" height="18">
-				<a href="tel:+78125550555">+7 (812) 555-05-55</a>
-				<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-			</div>
-			<div class="login-exit">
+    <section class="main-navigation fz24 lh24 d-flex">
+      <div class="container">
 
-				<img src="img/icon-login.svg" alt="#" width="20" height="17">
-				<a href="#">Войти</a>
-				<a href="#">Регистрация</a>
-			</div>
-		</section>
-		<!-- ///////////////	 пока не придумал названия для среднего блока menu	-->
-		<div class="sub-menu">
-			<!--	думаю, тут установить якоря, дабы удобно перемещаться по сайту, пусть он и небольшой	-->
-			<ul>
-				<li>
-					<a href="#">Главная</a>
-				</li>
-				<li>
-					<a href="#">Компания</a>
-				</li>
-				<li>
-					<a href="catalog.html">Каталог</a>
-				</li>
-				<li>
-					<a href="#">Новости</a>
-				</li>
-				<li>
-					<a href="#">Спецпредложения</a>
-				</li>
-				<li>
-					<a href="#">Доставка</a>
-				</li>
-				<li>
-					<a href="#">Контакты</a>
-				</li>
-			</ul>
-		</div>
-		<!-- END SUB MENU		-->
-	</header>
-	<!-- END HEADER	-->
-	<main>
-		<div class="categories">
-			<!-- создать div элементы и сделать ссылками		 -->
-			<ul>
-				<li>
-					<h3>Материалы</h3>
-					<a href="#">на любой вкус</a>
-					<img src="img/icon-1.svg" alt="#" width="44" height="65">
-				</li>
-				<li>
-					<h3>Инструмент</h3>
-					<a href="#">на все случаи</a>
-					<img src="img/icon-2.svg" alt="#" width="75" height="61">
-				</li>
-				<li>
-					<h3>Техника</h3>
-					<a href="#">для стройки</a>
-					<img src="img/icon-3.svg" alt="#" width="78" height="62">
-				</li>
-				<li>
-					<h3>Перфораторы</h3>
-					<p>Настоящие мужские игрушки</p>
-					<a href="#">Открыть каталог</a>
-					<!-- эту li я похоже оформил неправильно, т.к. слайдер должен перелистывать div (!вроде бы!) со всем содержимым. Или я просто внутри li сделаю 2 div, которые и будут листаться, но пока так					-->
-					<img src="img/perforators.jpg" alt="#" width="59" height="71">
-					<!--					<img src="img/drill.jpg" alt="#"> второе изображение-->
+        <div class="main-logo">
+          <a href="#" class="main-header-logo">
+            <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт">
+          </a>
+        </div>
+        <div class="search-link">
+          <a href="#"><img src="img/icon-search.svg" alt="" width="17" height="17" class="search-svg"> Поиск:</a>
+        </div>
 
-				</li>
-				<li>
-					<h3>Скидки 50%</h3>
-					<a href="#">на 350 товаров</a>
-					<img src="img/icon-4.svg" alt="#" width="59" height="72">
-				</li>
-				<li>
-					<h3>Доставка</h3>
-					<a href="#">бесплатно</a>
-					<img src="img/icon-5.svg" alt="#" width="78" height="63">
-				</li>
-			</ul>
-		</div>
-		<section class="popular-products">
-			<div>
-				<!-- products -->
-				<h2>Популярные товары:</h2>
-				<a href="catalog.html">Все популярные товары</a>
-			</div>
-			<!-- создать div, добавить img 			-->
-			<ul>
-				<li>
-					<img src="img/item-2.png" alt="#" width="184" height="164">
-					<h3>Перфоратор BOSCH BFG 9000</h3>
-				</li> <!-- max-width / padding -->
-				<li>
-					<img src="img/item-1.png" alt="#" width="184" height="164">
-					<h3>Перфоратор BOSCH BFG 3000</h3>
-				</li>
-				<li>
-					<img src="img/item-1.png" alt="#" width="184" height="164">
-					<h3>Перфоратор BOSCH BFG 6000</h3>
-				</li>
-				<li>
-					<img src="img/item-1.png" alt="#" width="184" height="164">
-					<h3>Перфоратор BOSCH BFG 2000</h3>
-				</li>
-			</ul>
-		</section>
-		<section class="manufacturers">
-			<h2>Популярные производители:</h2>
-			<a href="#">Все производители</a>
-			<ul>
-				<li><a href="#"><img src="img/bosch.png" alt="Компания Bosch" width="126" height="37"></a></li>
-				<li><a href="#"><img src="img/makita.png" alt="Компания Makita" width="123" height="40"></a></li>
-				<li><a href="#"><img src="img/dewalt.png" alt="Компания DeWalt" width="146" height="44"></a></li>
-				<li><a href="#"><img src="img/interskol.png" alt="Компания Интерскол" width="200" height="75"></a></li>
-				<li><a href="#"><img src="img/hitachi.png" alt="Компания Hitachi" width="170" height="30"></a></li>
-				<li><a href="#"><img src="img/lg.png" alt="Компания LG" width="121" height="73"></a></li>
-				<li><a href="#"><img src="img/aeg.png" alt="Компания Aeg power solution" width="151" height="96"></a></li>
-				<li><a href="#"><img src="img/metabo.png" alt="Компания Metabo" width="205" height="70"></a></li>
-			</ul>
-		</section>
-		<section class="services">
-			<h2>Сервисы</h2>
-			<p>Хороший интернет-магазин отличается от плохого не только ценами!
-				<!-- br/ ставлю просто как идею, но скорее всего max-width -->
-				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <div>
+          <ul class="site-menu d-flex">
+            <li class="menu-item">
 
-			<div class="main-services">
-				<h3><a href="#">Доставка</a></h3>
-				<h3><a href="#">Гарантия</a></h3>
-				<h3><a href="#">Кредит</a></h3>
-			</div>
-			<div class="delivery">
-				<h3>Доставка</h3>
-				<p>Мы с удовольствием доставим ваш товар прямо
-					<!--					-->
-					к вашему подъезду совершенно бесплатно!
-					<!--					-->
-					Ведь мы неплохо заработаем,
-					<!--						-->
-					поднимая его на ваш этаж!</p>
-			</div>
-			<div class="car">
-				<img src="img/car.png" alt="Машина!" width="468" height="260">
-			</div>
-		</section>
-		<section class="description">
-			<div class="about">
-				<h2>Компания «Техномарт»</h2>
-				<p>Настоящий мужской шоппинг начинается здесь!
-					Огромный выбор товаров для ремонта и строительства
-					не оставит равнодушными любителей сэкономить на
-					гастарбайтерах.</p>
-				<p>Мы можем доставить ваш товар в самые отдаленные точки России!
-					Техномарт работает со многими
-					транспортными компаниями:</p>
-				<ul>
-					<li>Деловые линии</li>
-					<li>Автотрейдинг</li>
-					<li>ЖелДорЭкспедиция</li>
-				</ul>
-				<a href="#">Подробнее о компании</a>
+            </li>
+            <li class="menu-item">
+              <img src="img/icon-bookmark.svg" alt="#" width="14" height="16"> <!-- icon-bookmark/ opacity 30% -->
+              <a href="#">Закладки:</a>
+            </li>
+            <li class="menu-item">
+              <img src="img/icon-cart.svg" alt="#" width="15" height="15">
+              <a href="#">Корзина:</a>
+            </li>
+            <li class="menu-item order">
+              <a href="#">Оформить заказ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-			</div>
-			<div class="contacts">
-				<h2>Контакты</h2>
-				<p>Вы можете забрать товар сами,
-					заехав в наш офис:</p>
-				<!--	тут карта	-->
-				<a href="#">Заблудились? Напишите нам!</a>
-			</div>
-		</section>
-	</main>
-	<footer>
-		<div class="footer-menu">
-			<a href="#">Техномарт</a>
-			<p>г. Санкт-Петербург, ул. Б. Конюшенная,
-				д. 19/8 +7 (812) 555-05-55</p>
-		</div>
-		<div class="footer-menu__categories">
-			<ul>
-				<li><a href="#">Компания</a></li>
-				<li><a href="#">Новости</a></li>
-				<li><a href="catalog.html">Каталог</a></li>
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Контакты</a></li>
-				<li><a href="#">Материалы</a></li>
-				<li><a href="#">Техника</a></li>
-				<li><a href="catalog.html">Инструмент</a></li>
-				<li><a href="#">Спецпредложения</a></li>
-			</ul>
-		</div>
-		<div class="footer-menu__description">
-			<div>
-				<p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
-			</div>
-			<div>
-				<a href="#"><img src="img/icon-vk.svg" alt="Ссылка на Vk" width="25" height="15"></a>
-				<a href="#"><img src="img/icon-fb.svg" alt="Ссылка на Facebook" width="12" height="22"></a>
-				<a href="#"><img src="img/icon-insta.svg" alt="Ссылка на Instagram" width="21" height="21"></a>
-			</div>
-			<div>
-				<p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-				<p>Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
-			</div>
-		</div>
 
-	</footer>
-</body></html>
+    <!--	END MAIN MENU	-->
+    <section class="header-info">
+
+      <div class="container">
+        <h1 class="visibility-hidden">Компания «Техномарт»</h1>
+        <!-- visibility: hidden -->
+        <div class="header-title">
+          <p><i>Интернет-магазин строительных материалов и инструментов для ремонта</i></p>
+        </div>
+
+        <div class="number">
+          <div class="number-link">
+            <img src="img/icon-phone.svg" alt="#" width="17" height="18">
+            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </div>
+          <p class="number-title fz14 lh24">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+
+        <div class="login-button">
+          <div class="login-link">
+            <img src="img/icon-login.svg" alt="#" width="20" height="17">
+            <a href="#" class="c-black">Войти</a>
+          </div>
+
+          <div class="registration-link">
+            <a href="#" class="c-black">Регистрация</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ///////////////	 пока не придумал названия для среднего блока menu	-->
+    <div class="container">
+      <nav class="nav-cat">
+        <div class="container">
+          <!--	думаю, тут установить якоря, дабы удобно перемещаться по сайту, пусть он и небольшой	-->
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Компания</a>
+            </li>
+            <li class="nav-item">
+              <a href="catalog.html">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Новости</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Спецпредложения</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- END SUB MENU		-->
+    </div>
+  </header>
+
+  <!-- END HEADER	-->
+  <main>
+    <div class="container">
+
+      <div class="categories-list">
+        <!-- создать div элементы и сделать ссылками		 -->
+        <ul>
+          <li class="categories-item  b-dark-orange">
+            <h3>Материалы</h3>
+            <a href="#" class="tt-up b-white-op">на любой вкус</a>
+            <img src="img/icon-1.svg" alt="#" width="44" height="65">
+          </li>
+          <li class="categories-item b-light-blue">
+            <h3>Инструмент</h3>
+            <a href="#" class="tt-up b-white-op">на все случаи</a>
+            <img src="img/icon-2.svg" alt="#" width="75" height="61">
+          </li>
+          <li class="categories-item b-purple">
+            <h3>Техника</h3>
+            <a href="#" class="tt-up b-white-op">для стройки</a>
+            <img src="img/icon-3.svg" alt="#" width="78" height="62">
+          </li>
+          <li class="categories-item-slider ">
+            <div class="perforators-slider tt-up">
+              <h3>Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>
+              <a href="#" class="button">Открыть каталог</a>
+              <!-- эту li я похоже оформил неправильно, т.к. слайдер должен перелистывать div (!вроде бы!) со всем содержимым. Или я просто внутри li сделаю 2 div, которые и будут листаться, но пока так					-->
+              <!--					<img src="img/drill.jpg" alt="#"> второе изображение-->
+            </div>
+          </li>
+          <li class="categories-item b-green">
+            <h3>Скидки 50%</h3>
+            <a href="#" class="tt-up b-white-op">на 350 товаров</a>
+            <img src="img/icon-4.svg" alt="#" width="59" height="72">
+          </li>
+          <li class="categories-item b-orange">
+            <h3>Доставка</h3>
+            <a href="#" class="tt-up b-white-op">бесплатно</a>
+            <img src="img/icon-5.svg" alt="#" width="78" height="63">
+          </li>
+        </ul>
+      </div>
+      <section class="best-products">
+        <div class="products-title">
+          <!-- products -->
+          <h3>Популярные товары:</h3>
+          <a href="catalog.html" class="button">Все популярные товары</a>
+        </div>
+        <!-- создать div, добавить img 			-->
+        <ul class="products-list">
+          <li class="products-item">
+            <img src="img/item-2.png" alt="#" width="184" height="164">
+            <h3>Перфоратор BOSCH BFG 9000</h3>
+            <a href="#" class="button">25500 Р.</a>
+          </li> <!-- max-width / padding -->
+          <li class="products-item">
+            <img src="img/item-1.png" alt="#" width="184" height="164">
+            <h3>Перфоратор BOSCH BFG 3000</h3>
+            <a href="#" class="button">15500 Р.</a>
+          </li>
+          <li class="products-item">
+            <img src="img/item-1.png" alt="#" width="184" height="164">
+            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <a href="#" class="button">25500 Р.</a>
+          </li>
+          <li class="products-item">
+            <img src="img/item-1.png" alt="#" width="184" height="164">
+            <h3>Перфоратор BOSCH BFG 2000</h3>
+            <a href="#" class="button">12500 Р.</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="manufacturers">
+        <div class="manufacturers-title b-light-purple">
+          <h2>Популярные производители:</h2>
+          <a href="#" class="button">Все производители</a>
+        </div>
+
+        <ul class="manufacturers-list">
+          <li class="manufacturers-item">
+            <a href="#"><img src="img/bosch.png" alt="Компания Bosch" width="126" height="37"></a>
+          </li>
+          <li class="manufacturers-item">
+            <a href="#"><img src="img/makita.png" alt="Компания Makita" width="123" height="40"></a>
+          </li>
+          <li class="manufacturers-item">
+            <a href="#"><img src="img/dewalt.png" alt="Компания DeWalt" width="146" height="44"></a>
+          </li>
+          <li class="manufacturers-item">
+            <a href="#"><img src="img/interskol.png" alt="Компания Интерскол" width="200" height="75"></a>
+          </li>
+          <li class="manufacturers-item">
+            <a href="#"><img src="img/hitachi.png" alt="Компания Hitachi" width="170" height="30"></a>
+          </li>
+          <li class="manufacturers-item">
+            <a href="#"><img src="img/lg.png" alt="Компания LG" width="121" height="73"></a>
+          </li>
+          <li class="manufacturers-item">
+            <a href="#"><img src="img/aeg.png" alt="Компания Aeg power solution" width="151" height="96"></a>
+          </li>
+          <li class="manufacturers-item">
+            <a href="#"><img src="img/metabo.png" alt="Компания Metabo" width="205" height="70"></a>
+          </li>
+
+        </ul>
+      </section>
+    </div>
+    <section class="services">
+      <div class="container">
+        <h2 class="c-black tt-up fz30 lh30">Сервисы</h2>
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!
+          <!-- br/ ставлю просто как идею, но скорее всего max-width -->
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+
+        <div class="services-tabs">
+          <ul>
+            <li><a href="#" class="tab-link">Доставка</a></li>
+            <li><a href="#" class="tab-link">Гарантия</a></li>
+            <li><a href="#" class="tab-link">Кредит</a></li>
+          </ul>
+        </div>
+
+
+        <div class="delivery">
+
+          <h3 class="c-blue tt-up fz30 lh30">Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо
+            <!--					-->
+            к вашему подъезду совершенно бесплатно!
+            <!--					-->
+            Ведь мы неплохо заработаем,
+            <!--						-->
+            поднимая его на ваш этаж!</p>
+        </div>
+
+        <div class="car">
+          <img src="img/car.png" alt="Машина!" width="468" height="260">
+        </div>
+      </div>
+    </section>
+
+    <section class="description c-black">
+      <div class="container">
+        <div class="about">
+          <h2 class="c-black tt-up fz30 lh30">Компания «Техномарт»</h2>
+          <p class="fz13 lh24">Настоящий мужской шоппинг начинается здесь!
+            Огромный выбор товаров для ремонта и строительства
+            не оставит равнодушными любителей сэкономить на
+            гастарбайтерах.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+            Техномарт работает со многими
+            транспортными компаниями:</p>
+          <ul>
+            <li class="fz18 lh24">Деловые линии</li>
+            <li class="fz18 lh24">Автотрейдинг</li>
+            <li class="fz18 lh24">ЖелДорЭкспедиция</li>
+          </ul>
+
+          <a href="#" class="button">Подробнее о компании</a>
+        </div>
+
+
+        <div class="contacts c-black">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами,
+            заехав в наш офис:</p>
+          <!--	тут карта	-->
+          <a href="#" class="button fz14 lh18 tt-up">Заблудились? Напишите нам!</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-menu">
+      <div class="container">
+
+        <div class="footer-contacts">
+          <a href="#" class="main-header-logo">
+            <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт">
+          </a>
+          <p class="fz18 lh24 ">г. Санкт-Петербург, ул. Б. Конюшенная,
+            д. 19/8 +7 (812) 555-05-55</p>
+
+        </div>
+        <div class="footer-categories">
+          <ul>
+            <li class="footer-categories__item">
+              <a href="#">Компания</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="#">Новости</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="catalog.html">Каталог</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="#">Контакты</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="#" class="c-gold">Материалы</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="#" class="c-gold">Техника</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="catalog.html" class="c-gold">Инструмент</a>
+            </li>
+            <li class="footer-categories__item">
+              <a href="#" class="c-gold">Спецпредложения</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-copyright c-white">
+      <div class="container">
+        <div class="copyright fz16 lh18">
+          <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
+        </div>
+        <div class="socials">
+          <ul class="socials-list">
+            <li>
+              <a href="#" class="socials-item"><img src="img/icon-vk.svg" alt="Ссылка на Vk" width="25" height="15"></a>
+            </li>
+            <li><a href="#" class="socials-item"><img src="img/icon-fb.svg" alt="Ссылка на Facebook" width="12" height="22"></a>
+            </li>
+            <li><a href="#" class="socials-item"><img src="img/icon-insta.svg" alt="Ссылка на Instagram" width="21" height="21"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="connections">
+          <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru" class="conntections-link c-gold">mail@htmlacademy.ru</a></p>
+          <p>Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss" class="conntections-link c-gold">htmlacademy.ru</a></p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+</body>
+
+</html>
