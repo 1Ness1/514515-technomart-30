@@ -27,7 +27,7 @@
             <img src="img/logo-technomart.svg" alt="Логотип компании Техномарт">
           </a>
         </div>
-        <div class="search-link">
+        <div class="search-link menu-item">
           <a href="#"><img src="img/icon-search.svg" alt="" width="17" height="17" class="search-svg"> Поиск:</a>
         </div>
 
@@ -37,8 +37,10 @@
 
             </li>
             <li class="menu-item">
-              <img src="img/icon-bookmark.svg" alt="#" width="14" height="16"> <!-- icon-bookmark/ opacity 30% -->
-              <a href="#">Закладки:</a>
+              <div class="bookmark-item">
+                <img src="img/icon-bookmark.svg" alt="#" width="14" height="16"> <!-- icon-bookmark/ opacity 30% -->
+                <a href="#">Закладки:</a>
+              </div>
             </li>
             <li class="menu-item">
               <img src="img/icon-cart.svg" alt="#" width="15" height="15">
@@ -206,7 +208,7 @@
           <h2 class="fz13 lh18 c-black ff-pt tt-up">Сортировка:</h2>
           <ul>
             <!-- я так понял переключатели через js			-->
-            <li><a href="#" class="c-red tt-up fz13 lh18 ff-pt ">По цене</a></li>
+            <li><a href="#" class="c-black-op tt-up fz13 lh18 ff-pt border-b-d">По цене</a></li>
             <li><a href="#" class="c-black-op tt-up fz13 lh18 ff-pt border-b-d">По типу</a></li>
             <li><a href="#" class="c-black-op tt-up fz13 lh18 ff-pt border-b-d">По функционалу</a></li>
           </ul>
@@ -378,19 +380,19 @@
         <div class="footer-categories">
           <ul>
             <li class="footer-categories__item">
-              <a href="#">Компания</a>
+              <a href="#" class="c-white">Компания</a>
             </li>
             <li class="footer-categories__item">
-              <a href="#">Новости</a>
+              <a href="#" class="c-white">Новости</a>
             </li>
             <li class="footer-categories__item">
-              <a href="catalog.html">Каталог</a>
+              <a href="catalog.html" class="c-white">Каталог</a>
             </li>
             <li class="footer-categories__item">
-              <a href="#">Доставка</a>
+              <a href="#" class="c-white">Доставка</a>
             </li>
             <li class="footer-categories__item">
-              <a href="#">Контакты</a>
+              <a href="#" class="c-white">Контакты</a>
             </li>
             <li class="footer-categories__item">
               <a href="#" class="c-gold">Материалы</a>
@@ -409,7 +411,7 @@
 
       </div>
     </div>
-    <div class="footer-copyright c-white">
+    <div class="footer-copyright">
       <div class="container">
         <div class="copyright fz16 lh18">
           <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>

@@ -18,6 +18,10 @@
   --basic-purple: #DC91D8;
   --basic-light-purple: #F7F3EC;
   --basic-gold: #FFDA96;
+
+  --basic-hover-blue: #161D29;
+  --basic-hover-red: #BA2732;
+  --basic-hover-extra-green: #5FBB2D;
 }
 
 
@@ -152,10 +156,44 @@ h2 {
   border-bottom: 5px solid var(--basic-error);
 }
 
+.main-header-logo:active {
+  background-color: var(--basic-hover-red);
+}
+
 .main-navigation {
   background-color: var(--basic-extra-blue);
 }
 
+.bookmark-item {
+  background-color: var(--basic-extra-blue);
+}
+
+.bookmark-item:active {
+  background-color: var(--basic-hover-blue);
+  opacity: 0.5;
+}
+
+.menu-item:active {
+  opacity: 0.5
+}
+
+
+
+
+
+
+/*
+
+.menu-item img {
+  opacity: 0.5;
+}
+
+.menu-item img:hover {
+  opacity: 1;
+}
+
+ пока не придумал как связать, но это наверное ближе когда изменю svg
+*/
 
 /*/// MAIN CLASSES ///*/
 
@@ -164,10 +202,28 @@ h2 {
   max-width: 200px;
 }
 
+.search-svg {
+  color: var(--basic-red);
+  fill: red;
+}
+
+svg path {
+  stroke: inherit;
+  fill: inherit;
+}
+
 .order {
   background-color: #63A63E;
   width: 150px;
   text-align: center;
+}
+
+.order:hover {
+  background-color: var(--basic-hover-extra-green);
+}
+
+.order:active {
+  opacity: 0.5;
 }
 
 
@@ -196,6 +252,23 @@ h2 {
   max-width: 300px;
   margin: 5px;
   text-align: center;
+}
+
+.login-link a:hover {
+  color: var(--basic-red);
+}
+
+.login-link a:active {
+  color: var(--basic-black);
+  opacity: 0.5;
+}
+
+.nav-item:hover {
+  background-color: #293449;
+}
+
+.nav-item:active {
+  opacity: 0.5;
 }
 
 /*/// HEADER CLASSES ///*/
@@ -289,14 +362,30 @@ h2 {
   background-color: var(--basic-blue);
   height: 60px;
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
   border-bottom: 5px solid var(--basic-extra-blue);
 }
 
 .categories-item {
   width: 300px;
   height: 125px;
+}
+
+.b-white-op:hover {
+  background-color: #eec16c;
+}
+
+.button:hover {
+  background-color: #CA2C37;
+}
+
+.button:active {
+  background-color: #BA2732;
+}
+
+.b-white-op:active {
+  background-color: #e6b965;
 }
 
 .perforators-slider {
@@ -329,6 +418,14 @@ h2 {
   text-align: center;
 }
 
+.manufacturers-item:hover {
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
+
+.manufacturers-item:active {
+  opacity: 0.5;
+}
+
 .services {
   color: var(--basic-black);
   height: 520px;
@@ -344,9 +441,13 @@ h2 {
   border-radius: 2px;
 }
 
-.switch-button:hover {
+.switch-button:active {
   background-color: var(--basic-red);
   color: var(--basic-white);
+}
+
+.switch-button:hover {
+  border: 1px solid #C5C5C5;
 }
 
 .footer-menu {
@@ -365,7 +466,42 @@ h2 {
   font-weight: 700;
 }
 
+.c-black-op:hover {
+  color: black;
+  border-bottom: 1px solid red;
+}
+
+.c-black-op:active {
+  color: red;
+  border: none;
+}
+
+/* тут нужно подправить под общий класс*/
 .tab-link:hover {
-  color: var(--basic-blue);
+  background-color: var(--basic-hover-blue);
+}
+
+.tab-link:active {
   background-color: var(--basic-white);
+  color: var(--basic-blue);
+}
+
+.c-white:hover {
+  border-bottom: 1px solid white;
+}
+
+.c-gold:hover {
+  border-bottom: 1px solid var(--basic-gold);
+}
+
+.c-white:active {
+  opacity: 0.5;
+}
+
+.c-gold:active {
+  opacity: 0.5;
+}
+
+.conntections-link:active {
+  color: var(--basic-red);
 }
