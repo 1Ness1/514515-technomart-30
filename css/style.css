@@ -82,10 +82,12 @@
 }
 
 .logo-link {
+  display: block;
   fill: var(--basic-white);
   background-color: var(--basic-red);
   padding: 12px 55px 14px 55px;
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  width: 220px;
 }
 
 .logo-link:active {
@@ -414,6 +416,8 @@
 }
 
 .button {
+
+  width: 220px;
   padding: 10px 45px;
   text-decoration: none;
   color: var(--basic-white);
@@ -648,19 +652,28 @@
 .footer-categories__list {
   list-style: none;
   padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-column-gap: 60px;
-  grid-row-gap: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.footer-categories__list:last-child {
+  margin-right: 0;
+}
+
+.footer-gold:first-child {
+  margin-left: 30px;
 }
 
 .footer-categories__item {
+
   color: var(--basic-grey);
   text-decoration: none;
   font-size: 18px;
   line-height: 24px;
 }
+
+
 
 .footer-categories__item:hover {
   text-decoration: underline;
@@ -754,7 +767,7 @@
 }
 
 .filter {
-  max-width: 220px;
+  width: 220px;
 }
 
 .filter-title {
@@ -811,9 +824,10 @@
 
 .sorting-title {
   background: var(--title-catalog-purple);
-  display: grid;
-  grid-template-columns: 240px auto;
-
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .sorting-subtitle {
@@ -821,12 +835,15 @@
   line-height: 18px;
   font-family: "PT sans", sans-serif;
   text-transform: uppercase;
+  margin: 10px 140px 10px 20px;
+
 }
 
 .sorting-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
+  flex-grow: 1;
   padding: 0;
 }
 
@@ -923,12 +940,11 @@ img {
 
 .footer-container {
   display: grid;
-  grid-template-columns: 320px 1fr;
-  grid-column-gap: 70px;
+  grid-template-columns: 300px 1fr;
+  grid-gap: 70px;
 }
 
 .footer-logo-link {
-
   padding: 23px 55px 23px 55px;
 }
 
@@ -947,19 +963,23 @@ img {
 }
 
 .main-part__inner {
-  display: grid;
-  grid-template-columns: 220px 700px;
-  grid-gap: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .products-list__inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  grid-gap: 20px;
 }
 
 .sorting {}
 
 .nav-item {}
+
+.description {
+  padding: 70px 0;
+}
