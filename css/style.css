@@ -747,6 +747,7 @@
 .crumbs-item {
   list-style: none;
   margin-right: 40px;
+  position: relative;
 }
 
 .crumbs-link {
@@ -755,7 +756,26 @@
   color: var(--basic-black);
   text-decoration: none;
   text-transform: uppercase;
+  position: relative;
 }
+
+.crumbs-item::after {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/icon-right-small.svg);
+  vertical-align: middle;
+  margin: 5px;
+  margin-left: 20px;
+  height: 13px;
+  width: 8px;
+  position: absolute;
+}
+
+.crumbs-item:last-child::after {
+  display: none;
+}
+
+
 
 .catalog-title {
   background: var(--basic-title-catalog);
@@ -954,11 +974,13 @@ img {
   align-items: center;
 }
 
-.header-login {}
+.header-login {
+  background: var(--basic-white);
+
+}
 
 .user-link {
   padding: 13px;
-  background: var(--basic-white);
   color: var(--basic-black);
 }
 
@@ -982,4 +1004,13 @@ img {
 
 .description {
   padding: 70px 0;
+}
+
+.logo {
+  fill: var(--basic-white);
+  background-color: var(--basic-red);
+  padding: 12px 55px 14px 55px;
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  width: 220px;
+}
 }
