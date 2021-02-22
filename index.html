@@ -21,6 +21,7 @@
   <header class="main-header">
     <section class="main-header__top">
       <div class="container">
+        <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
         <div class="toolbar">
           <div class="toolbar-item">
             <a href="#" class="logo">
@@ -30,7 +31,7 @@
             </a>
           </div>
           <div class="search">
-            <form action="action= https://echo.htmlacademy.ru" class="toolbar-search">
+            <form action="action=https://echo.htmlacademy.ru" class="toolbar-search">
 
               <label for="search">
               </label>
@@ -80,9 +81,6 @@
           <div class="header-mobile">
             <div class="telephone">
               <a href="tel:+78125550555" class="mobile-link">
-                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15.572 18.985H14.631C10.502 18.497 7.474 16.577 5.272 14.121C3.062 11.66 1.318 8.49202 0.977997 4.22802V3.08402C1.056 2.31002 1.437 1.78002 1.876 1.32702C2.425 0.76602 3.25 0.0440198 4.002 0.0190198C4.556 0.00101977 5.502 0.39902 5.881 0.91802C6.21 1.36402 6.385 2.25702 6.537 2.92102C6.691 3.59202 7.042 4.56402 6.945 5.21002C6.797 6.21702 5.458 6.64402 5.066 7.37602C6.373 10.511 8.509 12.815 11.359 14.407C12.074 14.015 12.705 12.835 13.691 12.812C14.05 12.803 14.509 12.99 14.875 13.098C15.277 13.219 15.625 13.373 15.979 13.506C16.575 13.73 17.627 14.027 17.983 14.527C18.348 15.04 18.553 15.883 18.473 16.406C18.309 17.447 16.594 18.603 15.572 18.985Z" fill="#B7BFC8" />
-                </svg>
                 +7 (812) 555-05-55</a>
             </div>
             <address class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
@@ -96,7 +94,7 @@
               </svg>
               Войти
             </a>
-            <a href="#" class="signup-link">
+            <a href="#" class="signup-link registration">
               Регистрация
             </a>
 
@@ -126,24 +124,30 @@
     <div class="container">
       <section class="benefits">
         <div class="materials benefits-item">
-          <h3 class="benefits-name">Материалы</h3>
-          <a href="#" class="benefits-link">на любой вкус</a>
+          <div class="benefits-text">
+            <h3 class="benefits-name">Материалы</h3>
+            <a href="#" class="benefits-link">на любой вкус</a>
+          </div>
           <svg width="44" height="65" viewBox="0 0 44 65" xmlns="http://www.w3.org/2000/svg" class="benefits-icon">
             <path d="M37.91 30.438V41.307C37.91 41.307 38.015 44.042 35.085 44.042C32.016 44.042 31.96 41.307 31.96 41.307V34.891C31.96 34.651 31.624 32.982 29.641 32.982C27.016 32.982 26.971 34.859 26.971 34.859V54.08C26.971 54.08 27 55.943 24.507 55.943C22 55.943 22 53.96 22 53.96V40.016C22 40.016 22 37.071 18.195 37.071C14.141 37.071 14.228 40.196 14.228 40.196V43.924C14.228 43.924 14.107 46.869 9.54 46.869C4.973 46.869 4.912 42.36 4.912 42.36V29.938C3.168 28.976 0 26.671 0 26.671V56.003C0 56.003 2.988 65 22 65C41.012 65 44 56.305 44 56.305V26.671C41.062 29.5 37.91 30.438 37.91 30.438Z" fill="" />
             <path fill-rule="evenodd" clip-rule="evenodd" d="M22 0C1.688 0 0 19.875 0 19.875V22.937C8.438 29.188 22 29 22 29C22 29 35.562 29.188 44 22.938V19.876C44 19.875 42.312 0 22 0ZM22 25C10.25 25 7.688 22.625 7.688 22.625C13.938 19.75 22 19.875 22 19.875C22 19.875 30.062 19.75 36.312 22.625C36.312 22.625 33.75 25 22 25ZM4.312 15.563C4.312 15.563 12.438 12.625 22 12.625C31.562 12.625 39.688 15.562 39.688 15.562C35.125 2.624 22 3.062 22 3.062C22 3.062 8.875 2.625 4.312 15.563Z" fill="" />
           </svg>
         </div>
         <div class="tools benefits-item">
-          <h3 class="benefits-name">Инструмент</h3>
-          <a href="#" class="benefits-link">на все случаи</a>
+          <div class="benefits-text">
+            <h3 class="benefits-name">Инструмент</h3>
+            <a href="#" class="benefits-link">на все случаи</a>
+          </div>
           <svg width="75" height="61" viewBox="0 0 75 61" fill="none" xmlns="http://www.w3.org/2000/svg" class="benefits-icon">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M2.103 0C0.167 0 0 2.041 0 2.041V17.853C0 20.789 2.903 20.855 2.903 20.855H11.91C13.845 20.855 13.511 22.189 13.511 22.189C13.511 22.189 11.042 35.199 10.776 37.4C10.509 39.603 8.908 41.004 8.908 41.004C8.908 41.004 6.773 42.205 5.906 42.672C5.039 43.139 5.039 44.873 5.039 44.873H35.928V44.139C35.928 42.672 29.456 41.004 26.855 40.737C24.253 40.471 24.787 38.735 24.787 38.735L25.854 30.93H28.856L29.99 23.057H26.988L27.319 20.32L35.928 20.189C41.733 19.588 45.936 16.119 45.936 16.119V4.109C41.333 0.84 33.993 0 33.993 0H2.103ZM60.387 8.016H73.875C74.45 8.016 74.917 9.128 74.917 10.5C74.917 11.872 74.45 12.984 73.875 12.984H60.387C59.766 15.271 58.315 16.875 56.625 16.875H49.083V4.125H56.625C58.316 4.125 59.766 5.729 60.387 8.016ZM6.907 61C5.039 61 5.039 58.949 5.039 58.949V47.942H35.928V59.016C35.928 60.816 33.927 61 33.927 61H6.907ZM36 4.969V4.938C36 4.388 35.55 3.938 35 3.938H5.031C4.481 3.938 4.031 4.388 4.031 4.938V4.969C4.031 5.519 4.481 5.969 5.031 5.969H35C35.55 5.969 36 5.519 36 4.969Z" fill="white" />
           </svg>
 
         </div>
         <div class="technics benefits-item">
-          <h3 class="benefits-name">Техника</h3>
-          <a href="#" class="benefits-link">для стройки</a>
+          <div class="benefits-text">
+            <h3 class="benefits-name">Техника</h3>
+            <a href="#" class="benefits-link">для стройки</a>
+          </div>
           <svg width="78" height="62" viewBox="0 0 78 62" fill="none" xmlns="http://www.w3.org/2000/svg" class="benefits-icon">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 45.875C0 36.968 7.22 29.749 16.125 29.749C25.031 29.749 32.251 36.968 32.25 45.875C32.25 54.78 25.03 62 16.125 62C7.22 62 0 54.78 0 45.875ZM10.9579 51.0421C12.3283 52.4125 14.187 53.1823 16.125 53.182C18.063 53.1823 19.9217 52.4125 21.2921 51.0421C22.6625 49.6718 23.4323 47.813 23.432 45.875C23.432 41.8395 20.1605 38.568 16.125 38.568C12.0895 38.568 8.818 41.8395 8.818 45.875C8.81773 47.813 9.58749 49.6718 10.9579 51.0421ZM60.854 45.874C56.4015 45.874 52.792 49.4835 52.792 53.936C52.792 56.8163 54.3286 59.4778 56.823 60.9179C59.3174 62.3581 62.3906 62.3581 64.885 60.9179C67.3794 59.4778 68.916 56.8163 68.916 53.936C68.9165 51.7977 68.0673 49.7468 66.5553 48.2347C65.0433 46.7227 62.9923 45.8735 60.854 45.874ZM55.792 53.936C55.7914 56.7322 58.0578 58.9995 60.854 59C63.6502 59.0006 65.9174 56.7342 65.918 53.938C65.9186 51.1418 63.6522 48.8746 60.856 48.874C58.0598 48.8735 55.7926 51.1398 55.792 53.936Z" fill="white" />
             <path fill-rule="evenodd" clip-rule="evenodd" d="M75.437 31.313C75.875 34.625 77.898 49.727 77.898 49.727C77.898 49.727 78.641 52.875 75 52.875H73.045C72.656 46.473 67.355 41.396 60.854 41.396C54.353 41.396 49.053 46.473 48.663 52.875H38.499C39.19 50.664 39.563 48.313 39.563 45.875C39.563 32.929 29.069 22.436 16.125 22.436C11.4651 22.4285 6.90969 23.8168 3.046 26.422C3.001 23.463 3.004 12.537 5.312 6.167C5.312 6.167 6.375 3.625 8.75 3C11.125 2.375 33.5 0 33.5 0C33.5 0 35.814 0.062 36.626 1.875C37.438 3.688 47.188 23.75 47.188 23.75L59 25.128V19.833H63V14H66V25.946L71.812 26.625C71.812 26.625 74.89 27.172 75.437 31.313ZM16.125 19.833H23.083V6.167H16.125V19.833ZM33.083 19.833H26.125V6.167H33.083V19.833ZM49 36H53.016V29H49V36ZM60.016 36H56V29H60.016V36ZM63 36H67.016V29H63V36Z" fill="white" />
@@ -151,21 +155,46 @@
 
         </div>
         <div class="slider">
-          <div class="slider-perforator">
-            <div class="slider-perforator__top">
-              <div class="slider-text">
-                <h3 class="slider-title">Перфораторы</h3>
-                <p class="slider-subtitle">Настоящие мужские игрушки</p>
+          <ul class="slider-list">
+            <li class="slider-item  slide">
+              <div class="slider-perforator">
+                <div class="slider-perforator__top">
+                  <div class="slider-text">
+                    <h3 class="slider-title">Перфораторы</h3>
+                    <p class="slider-subtitle">Настоящие мужские игрушки</p>
+                  </div>
+                  <div class="slider-link">
+                    <a href="#" class="button">открыть каталог</a>
+                  </div>
+                </div>
               </div>
-              <div class="slider-button">
-                <a href="#" class="button">открыть каталог</a>
+            </li>
+            <li class="slider-item slide slide-current">
+              <div class="slider-drill">
+                <div class="slider-perforator__top">
+                  <div class="slider-text">
+                    <h3 class="slider-title">Дрели</h3>
+                    <p class="slider-subtitle">Соседям на радость</p>
+                  </div>
+                  <div class="slider-link">
+                    <a href="#" class="button">открыть каталог</a>
+                  </div>
+                </div>
               </div>
-            </div>
+            </li>
+
+          </ul>
+          <div class="slider-buttons">
+            <button type="button" aria-label="Первый слайд"></button>
+            <button type="button" aria-label="Второй слайд" class="right"></button>
           </div>
         </div>
         <div class="discount benefits-item">
-          <h3 class="benefits-name">Скидки 50%</h3>
-          <a href="#" class="benefits-link">на 350 товаров</a>
+          <div class="benefits-text">
+            <h3 class="benefits-name">Скидки 50%</h3>
+
+            <a href="#" class="benefits-link">на 350 товаров</a>
+          </div>
           <svg width="59" height="73" viewBox="0 0 59 73" xmlns="http://www.w3.org/2000/svg" class="benefits-icon">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M58.34 21.545C57.7735 20.7922 56.8861 20.3496 55.944 20.35H17.274L14.799 12.965H3.058C1.40114 12.965 0.0579987 14.3081 0.0579987 15.965C0.0579987 17.6218 1.40114 18.965 3.058 18.965H10.482L23.982 59.25H49.141C50.7979 59.25 52.141 57.9068 52.141 56.25C52.141 54.5931 50.7979 53.25 49.141 53.25H28.299L26.573 48.101H49.693C51.031 48.1009 52.2074 47.2149 52.577 45.929L58.827 24.179C59.0866 23.2732 58.9063 22.2981 58.34 21.545ZM50.559 31.226H45.749V26.35H51.96L50.559 31.226ZM32.942 26.35V31.225H39.749V26.35H32.942ZM39.749 37.226V42.101H32.942V37.226H39.749ZM26.942 31.225V26.35H19.285L20.919 31.225H26.942ZM22.929 37.226H26.942V42.101H24.563L22.929 37.226ZM45.749 37.226V42.101H47.434L48.835 37.226H45.749Z" fill="" />
             <path d="M27.406 72.875C30.5988 72.875 33.187 70.2867 33.187 67.094C33.187 63.9012 30.5988 61.313 27.406 61.313C24.2132 61.313 21.625 63.9012 21.625 67.094C21.625 70.2867 24.2132 72.875 27.406 72.875Z" fill="" />
@@ -176,8 +205,10 @@
 
         </div>
         <div class="delivery benefits-item">
-          <h3 class="benefits-name">Доставка</h3>
-          <a href="#" class="benefits-link">бесплатно</a>
+          <div class="benefits-text">
+            <h3 class="benefits-name">Доставка</h3>
+            <a href="#" class="benefits-link">бесплатно</a>
+          </div>
           <svg width="78" height="63" viewBox="0 0 78 63" fill="none" xmlns="http://www.w3.org/2000/svg" class="benefits-icon">
             <path d="M25.983 63C30.1251 63 33.483 59.6421 33.483 55.5C33.483 51.3579 30.1251 48 25.983 48C21.8409 48 18.483 51.3579 18.483 55.5C18.483 59.6421 21.8409 63 25.983 63Z" fill="" />
             <path d="M59.982 63C64.1241 63 67.482 59.6421 67.482 55.5C67.482 51.3579 64.1241 48 59.982 48C55.8399 48 52.482 51.3579 52.482 55.5C52.482 59.6421 55.8399 63 59.982 63Z" fill="" />
@@ -197,22 +228,22 @@
           <li class="products-item">
             <img src="img/item-2.png" alt="#" width="184" height="164">
             <p>Перфоратор BOSCH BFG 9000</p>
-            <a href="#" class="button">25500 Р.</a>
+            <a href="#" class="button-buy button">25500 Р.</a>
           </li> <!-- max-width / padding -->
           <li class="products-item">
-            <img src="img/item-1.png" alt="#" width="184" height="164">
+            <img src="img/item-1.png" alt="#" width="127" height="112">
             <p>Перфоратор BOSCH BFG 3000</p>
-            <a href="#" class="button">15500 Р.</a>
+            <a href="#" class="button-buy">15500 Р.</a>
           </li>
           <li class="products-item">
-            <img src="img/item-1.png" alt="#" width="184" height="164">
+            <img src="img/item-1.png" alt="#" width="127" height="112">
             <p>Перфоратор BOSCH BFG 6000</p>
-            <a href="#" class="button">25500 Р.</a>
+            <a href="#" class="button-buy">25500 Р.</a>
           </li>
           <li class="products-item">
-            <img src="img/item-1.png" alt="#" width="184" height="164">
+            <img src="img/item-1.png" alt="#" width="127" height="112">
             <p>Перфоратор BOSCH BFG 2000</p>
-            <a href="#" class="button">12500 Р.</a>
+            <a href="#" class="button-buy">12500 Р.</a>
           </li>
         </ul>
       </section>
