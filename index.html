@@ -10,8 +10,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -31,7 +30,7 @@
               </svg>
             </a>
           </div>
-          <div class="search">
+          <div class="toolbar-item">
             <form action="action=https://echo.htmlacademy.ru" class="toolbar-search">
 
               <label for="search">
@@ -45,27 +44,26 @@
 
             </form>
           </div>
-          <div class="toolbar-item bookmarks">
-            <a href="#" class="toolbar-link">
+          <div class="toolbar-item">
+            <a href="#" class="toolbar-link bookmark">
               <svg width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z" />
               </svg>
               Закладки: 0
             </a>
           </div>
-          <div class="toolbar-item cart">
-            <a href="#" class="toolbar-link">
+          <div class="toolbar-item">
+            <a href="#" class="toolbar-link cart">
               <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="" />
                 <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="" />
                 <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="" />
               </svg>
-
               Корзина: 0
             </a>
           </div>
-          <div class="toolbar-item order">
-            <a href="#" class="toolbar-link">Оформить заказ</a>
+          <div class="toolbar-item">
+            <a href="#" class="toolbar-link order">Оформить заказ</a>
           </div>
         </div>
       </div>
@@ -75,8 +73,8 @@
         <div class="header-info">
           <div class="header-title">
             <p>
-              <i>Интернет-магазин строительных материалов <br>
-                и инструментов для ремонта</i>
+              Интернет-магазин строительных материалов <br>
+              и инструментов для ремонта
             </p>
           </div>
           <div class="header-mobile">
@@ -88,7 +86,7 @@
           </div>
           <div class="header-login">
 
-            <a href="#" class="signup-link login">
+            <a href="#" class="signup-link login-link">
               <svg width="21" height="17" viewBox="0 0 21 17" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z" fill="" />
                 <path d="M16.986 15.01H11.959V17H16.986C19.164 17 19.99 15.19 20.015 13.974V3.028C19.99 1.811 19.164 0 16.986 0H11.959V1.99H16.986C17.825 1.99 17.978 2.671 17.996 3.047V13.951C17.979 14.327 17.825 15.01 16.986 15.01Z" fill="" />
@@ -125,7 +123,7 @@
       <section class="benefits">
         <div class="materials benefits-item">
           <div class="benefits-text">
-            <h3 class="benefits-name">Материалы</h3>
+            <p class="benefits-name">Материалы</p>
             <a href="#" class="benefits-link">на любой вкус</a>
           </div>
           <svg width="44" height="65" viewBox="0 0 44 65" xmlns="http://www.w3.org/2000/svg" class="benefits-icon">
@@ -135,7 +133,7 @@
         </div>
         <div class="tools benefits-item">
           <div class="benefits-text">
-            <h3 class="benefits-name">Инструмент</h3>
+            <p class="benefits-name">Инструмент</p>
             <a href="#" class="benefits-link">на все случаи</a>
           </div>
           <svg width="75" height="61" viewBox="0 0 75 61" fill="none" xmlns="http://www.w3.org/2000/svg" class="benefits-icon">
@@ -145,7 +143,7 @@
         </div>
         <div class="technics benefits-item">
           <div class="benefits-text">
-            <h3 class="benefits-name">Техника</h3>
+            <p class="benefits-name">Техника</p>
             <a href="#" class="benefits-link">для стройки</a>
           </div>
           <svg width="78" height="62" viewBox="0 0 78 62" fill="none" xmlns="http://www.w3.org/2000/svg" class="benefits-icon">
@@ -156,11 +154,11 @@
         </div>
         <div class="slider">
           <ul class="slider-list">
-            <li class="slider-item  slide">
+            <li class="slider-item  slide slide-current">
               <div class="slider-perforator">
                 <div class="slider-perforator__top">
                   <div class="slider-text">
-                    <h3 class="slider-title">Перфораторы</h3>
+                    <p class="slider-title">Перфораторы</p>
                     <p class="slider-subtitle">Настоящие мужские игрушки</p>
                   </div>
                   <div class="slider-link">
@@ -169,7 +167,7 @@
                 </div>
               </div>
             </li>
-            <li class="slider-item slide slide-current">
+            <li class="slider-item slide ">
               <div class="slider-drill">
                 <div class="slider-perforator__top">
                   <div class="slider-text">
@@ -216,20 +214,18 @@
           </svg>
         </div>
       </section>
-
       <section class="best-products">
         <div class="products-title">
-          <!-- products -->
           <p>Популярные товары:</p>
           <a href="catalog.html" class="button">Все популярные товары</a>
         </div>
         <!-- создать div, добавить img 			-->
         <ul class="products-list">
-          <li class="products-item">
-            <div class="card-image">
-              <a href="#">
-                <img src="img/item-1.png" alt="#" width="144" height="128">
-              </a>
+          <li class="products-item item-drill">
+            <div class="card-image-drill">
+
+              <img src="img/item-2.png" alt="#" width="184" height="164">
+
               <div class="card-links">
                 <a href="#" class="buy">купить</a>
                 <a href="#" class="in-bookmark">в закладки</a>
@@ -237,23 +233,25 @@
             </div>
 
 
+            <div class="card-text">
+              <a href="#" class="products-name">
+                Перфоратор BOSCH BFG 6000
 
-            <a href="#" class="products-name">
-              <p>Перфоратор BOSCH BFG 6000</p>
-            </a>
-            <!-- на всякий случай, тут не добавлял ссылки, если что потом просто оберну. 						-->
-            <s>30500 Р.</s>
-            <p>
+              </a>
+              <!-- на всякий случай, тут не добавлял ссылки, если что потом просто оберну. 						-->
+              <p class="old-price grey-text">30500 Р.</p>
+
               <!-- strike -->
-              <a href="#" class="button-buy">25500 Р.</a>
-            </p>
+              <a href="#" class="button-buy button-buy-item2">25500 Р.</a>
+
+
+
+            </div>
 
           </li>
           <li class="products-item">
-            <div class="card-image">
-              <a href="#">
-                <img src="img/item-1.png" alt="#" width="144" height="128">
-              </a>
+            <div class="card-image item-3">
+              <img src="img/item-3.png" alt="#" width="127" height="112">
               <div class="card-links">
                 <a href="#" class="buy">купить</a>
                 <a href="#" class="in-bookmark">в закладки</a>
@@ -261,23 +259,24 @@
             </div>
 
 
+            <div class="card-text">
+              <a href="#" class="products-name">
+                Перфоратор BOSCH BFG 6000
 
-            <a href="#" class="products-name">
-              <p>Перфоратор BOSCH BFG 6000</p>
-            </a>
-            <!-- на всякий случай, тут не добавлял ссылки, если что потом просто оберну. 						-->
-            <s>30500 Р.</s>
-            <p>
+              </a>
+              <!-- на всякий случай, тут не добавлял ссылки, если что потом просто оберну. 						-->
+              <p class="old-price grey-text">30500 Р.</p>
+
               <!-- strike -->
               <a href="#" class="button-buy">25500 Р.</a>
-            </p>
 
+
+
+            </div>
           </li>
           <li class="products-item">
             <div class="card-image">
-              <a href="#">
-                <img src="img/item-1.png" alt="#" width="144" height="128">
-              </a>
+              <img src="img/item-1.png" alt="#" width="144" height="128">
               <div class="card-links">
                 <a href="#" class="buy">купить</a>
                 <a href="#" class="in-bookmark">в закладки</a>
@@ -285,23 +284,24 @@
             </div>
 
 
+            <div class="card-text">
+              <a href="#" class="products-name">
+                Перфоратор BOSCH BFG 6000
 
-            <a href="#" class="products-name">
-              <p>Перфоратор BOSCH BFG 6000</p>
-            </a>
-            <!-- на всякий случай, тут не добавлял ссылки, если что потом просто оберну. 						-->
-            <s>30500 Р.</s>
-            <p>
+              </a>
+              <!-- на всякий случай, тут не добавлял ссылки, если что потом просто оберну. 						-->
+              <p class="old-price grey-text">30500 Р.</p>
+
               <!-- strike -->
               <a href="#" class="button-buy">25500 Р.</a>
-            </p>
 
+
+
+            </div>
           </li>
           <li class="products-item">
-            <div class="card-image">
-              <a href="#">
-                <img src="img/item-1.png" alt="#" width="144" height="128">
-              </a>
+            <div class="card-image item-3">
+              <img src="img/item-3.png" alt="#" width="127" height="112">
               <div class="card-links">
                 <a href="#" class="buy">купить</a>
                 <a href="#" class="in-bookmark">в закладки</a>
@@ -309,21 +309,23 @@
             </div>
 
 
+            <div class="card-text">
+              <a href="#" class="products-name">
+                Перфоратор BOSCH BFG 6000
 
-            <a href="#" class="products-name">
-              <p>Перфоратор BOSCH BFG 6000</p>
-            </a>
-            <!-- на всякий случай, тут не добавлял ссылки, если что потом просто оберну. 						-->
-            <s>30500 Р.</s>
-            <p>
+              </a>
+              <!-- на всякий случай, тут не добавлял ссылки, если что потом просто оберну. 						-->
+              <p class="old-price grey-text">30500 Р.</p>
+
               <!-- strike -->
               <a href="#" class="button-buy">25500 Р.</a>
-            </p>
 
+
+
+            </div>
           </li>
         </ul>
       </section>
-
       <section class="manufacturers ">
         <div class="manufacturers-title products-title">
           <p>Популярные производители:</p>
@@ -425,7 +427,6 @@
         </div>
       </div>
     </section>
-
     <section class="description">
       <div class="container">
         <div class="description-container">
@@ -482,7 +483,7 @@
 
             <ul class="footer-categories__list">
               <li><a href="#" class="footer-categories__item">Компания</a></li>
-              <li><a href="#" class="footer-categories__item">Доставка</a></li>
+              <li><a href="#" class="footer-categories__item">Новости</a></li>
               <li><a href="#" class="footer-categories__item">Каталог</a></li>
               <li><a href="#" class="footer-categories__item">Доставка</a></li>
               <li><a href="#" class="footer-categories__item">Контакты</a></li>
