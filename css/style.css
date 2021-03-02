@@ -755,8 +755,10 @@ p.benefits-name {}
 .footer-address {
   font-size: 18px;
   line-height: 24px;
+  margin: 0;
   width: 330px;
   color: var(--basic-light-grey);
+  margin-top: 26px;
 }
 
 .footer-categories__list {
@@ -797,7 +799,9 @@ p.benefits-name {}
 
 .copyright-text {
   max-width: 280px;
+  font-size: 16px;
   color: var(--basic-white);
+  line-height: 18px;
 }
 
 .socials-list {
@@ -1079,7 +1083,7 @@ p.benefits-name {}
 }
 
 .footer-logo-link {
-  padding: 20px 0 25px 0;
+  padding: 18px 0 18px 0;
   width: 220px;
   text-align: center;
 }
@@ -1088,10 +1092,10 @@ a.logo-link.footer-logo-link {}
 
 .copyright-container {
   display: grid;
-  grid-template-columns: auto auto 1fr;
+  grid-template-columns: 278px auto 1fr;
   align-items: center;
   margin-top: 14px;
-  grid-gap: 110px;
+  grid-gap: 112px;
 }
 
 .header-login {
@@ -1587,7 +1591,7 @@ input[type="radio"]:checked + .radio::before {
 
 .card-links {
   display: none;
-  padding: 20px 0 0 0px;
+  padding: 20px 0 0 30px;
   position: absolute;
   text-align: center;
   left: 0;
