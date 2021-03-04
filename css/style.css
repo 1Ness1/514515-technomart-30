@@ -291,9 +291,12 @@ img {
   text-decoration: none;
   fill: var(--basic-login-grey);
   background: var(--basic-white);
-  padding: 8px 0px;
+  padding: 11px 0px;
   margin-top: 6px;
+  display: flex;
+  align-items: center;
   position: relative;
+  justify-items: center;
 }
 
 .signup-link:hover {
@@ -1165,7 +1168,10 @@ button.button-submit {}
 }
 
 .logout-link svg {
-  margin: 1px 18px;
+  /* margin: 1px 18px; */
+  margin-left: 15px;
+  margin-right: 25px;
+  margin-bottom: 1px;
 }
 
 .header-login-name {
@@ -1359,6 +1365,7 @@ button.button-submit {}
 .registration {
   width: 150px;
   margin-left: 10px;
+  justify-content: center;
 }
 
 .sign-name {
@@ -1442,6 +1449,7 @@ button.button-submit {}
   display: flex;
   /* position: relative; */
   align-self: flex-start;
+  background: var(--basic-white);
 }
 
 
@@ -1533,8 +1541,10 @@ button.button-submit {}
 
 .login-link {
   width: 121px;
-  position: relative;
-  padding-left: 20px;
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  /* padding-left: 20px; */
 }
 
 .header-login__inner {
@@ -1739,9 +1749,11 @@ input[type="radio"]:checked + .radio::before {
 
 
 .login-link svg {
-  position: absolute;
-  left: 18px;
-  top: 17px;
+  /* position: absolute; */
+  /* left: 18px; */
+  /* top: 17px; */
+  margin-left: 17px;
+  margin-right: 8px;
 }
 
 .materials svg {
@@ -1824,8 +1836,9 @@ input[type="radio"]:checked + .radio::before {
 
 .logout-svg__link {
   position: absolute;
-  top: 12px;
-  left: 4px;
+  top: 13px;
+  left: 8px;
+  /* margin-right: 10px; */
 }
 
 
