@@ -191,7 +191,6 @@ img {
 
 .order {
   background-color: var(--basic-order);
-  /* padding: 8px; */
 }
 
 .order:hover {
@@ -292,8 +291,8 @@ img {
   text-decoration: none;
   fill: var(--basic-login-grey);
   background: var(--basic-white);
-  padding: 10px 0px;
-  margin-top: 5px;
+  padding: 8px 0px;
+  margin-top: 6px;
   position: relative;
 }
 
@@ -416,8 +415,6 @@ img {
   line-height: 30px;
 }
 
-p.benefits-name {}
-
 .benefits-link {
   display: block;
   font-size: 14px;
@@ -493,9 +490,6 @@ p.benefits-name {}
   display: block;
 }
 
-.button:hover {
-  /* background: var(--button-red-hover); */
-}
 
 .button:active {
   background: var(--basic-red-active);
@@ -948,6 +942,9 @@ p.benefits-name {}
 
 .filter-list {
   padding: 0;
+  /* margin: 0; */
+  margin-top: 12px;
+  margin-bottom: 8px;
 }
 
 .filter-li {
@@ -969,6 +966,8 @@ p.benefits-name {}
   text-transform: uppercase;
   color: var(--basic-black);
 }
+
+button.button-submit {}
 
 .sorting-title {
   background: var(--title-catalog-purple);
@@ -1103,7 +1102,6 @@ p.benefits-name {}
   text-align: center;
 }
 
-a.logo-link.footer-logo-link {}
 
 .copyright-container {
   display: grid;
@@ -1144,7 +1142,6 @@ a.logo-link.footer-logo-link {}
   /* text-align: center; */
 }
 
-.sorting {}
 
 .nav-item {
   /* width: 135px; */
@@ -1199,8 +1196,6 @@ a.logo-link.footer-logo-link {}
   left: -15px;
 }
 
-
-
 .pagination-active {
   background: var(--basic-red);
   color: var(--basic-white);
@@ -1208,7 +1203,9 @@ a.logo-link.footer-logo-link {}
 
 .filter fieldset {
   border: 0;
-  margin: 15px 0;
+  margin: 17px 0;
+  /* margin-top: 18px; */
+  /* margin-bottom: -8px; */
   padding: 0;
 }
 
@@ -1228,7 +1225,7 @@ a.logo-link.footer-logo-link {}
 
 .range-filter {
   width: 220px;
-  margin-top: 12px;
+  margin: 14px 0 7px 0;
 }
 
 
@@ -1243,7 +1240,7 @@ a.logo-link.footer-logo-link {}
 .range-controls {
   position: relative;
   height: 80px;
-  margin-bottom: 15px;
+  margin-bottom: 6px;
   background-color: #F7F3EC;
   padding-right: 20px;
   padding-left: 20px;
@@ -1306,9 +1303,9 @@ a.logo-link.footer-logo-link {}
 .price-controls {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.best-products {}
 
 .manufacturers {
   margin: 47px 0 68px 0;
@@ -1755,8 +1752,6 @@ input[type="radio"]:checked + .radio::before {
   margin-right: 9px;
 }
 
-path {}
-
 .technics svg {
   margin-right: 7px;
 }
@@ -1774,10 +1769,6 @@ path {}
   margin: 0 14px;
 }
 
-
-.item-drill {
-  /* padding: 6px 18px 21px 18px; */
-}
 
 .card-text {
   /* text-align: center; */
@@ -1833,7 +1824,8 @@ path {}
 
 .logout-svg__link {
   position: absolute;
-  top: 13px;
+  top: 12px;
+  left: 4px;
 }
 
 
@@ -1961,4 +1953,10 @@ path {}
 
 .modal-map {
   width: 940px;
+}
+
+.filter-li_radio {
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 14px;
 }
