@@ -1169,9 +1169,8 @@ button.button-submit {}
 
 .logout-link svg {
   /* margin: 1px 18px; */
-  margin-left: 15px;
+  margin-left: 14px;
   margin-right: 25px;
-  margin-bottom: 1px;
 }
 
 .header-login-name {
@@ -1864,21 +1863,18 @@ input[type="radio"]:checked + .radio::before {
 
 .modal {
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   margin: auto;
-  color: var(--basic-black);
-  background: var(--basic-white);
+  color: var(
+  --basic-black);
+  background: var(
+  --basic-white);
   z-index: 50;
-  border-top: 7px solid var(--basic-red);
-
-
-  bottom: 135px;
-  top: auto;
-
-  display: none;
+  border-top: 7px solid var(
+  --basic-red);
+  /* display: none; */
 }
 
 .modal-form {
@@ -1903,6 +1899,7 @@ input[type="radio"]:checked + .radio::before {
 .message-to {
   height: 114px;
   width: 100%;
+  padding-top: 7px;
 }
 
 .form-grid {
@@ -1962,6 +1959,7 @@ input[type="radio"]:checked + .radio::before {
 .message-to:placeholder-shown {
   font-size: 13px;
   line-height: 24px;
+  padding-left: 12px;
 }
 
 .modal-map {
@@ -1972,4 +1970,48 @@ input[type="radio"]:checked + .radio::before {
   list-style: none;
   margin-top: 20px;
   margin-bottom: 14px;
+}
+
+.modal-order {
+  width: 620px;
+  height: 282px;
+}
+
+.modal-order-links {
+  background: var(--basic-header-bg);
+}
+
+.order-add {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  position: relative;
+  padding: 67px 99px;
+  text-align: center;
+}
+
+.order-add::before {
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  top: 45px;
+  left: 80px;
+  background: url("../img/icon-mark.svg") no-repeat;
+}
+.modal-order-links {
+  background: var(--basic-header-bg);
+  padding: 37px 114px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-add-button {
+  width: 192px;
+}
+
+.order-proceed-button {
+  background: var(--basic-white);
+  color: var(--basic-black);
+  width: 192px;
 }
