@@ -1875,6 +1875,7 @@ input[type="radio"]:checked + .radio::before {
   border-top: 7px solid var(
   --basic-red);
   /* display: none; */
+  filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.75));
 }
 
 .modal-form {
@@ -1918,6 +1919,9 @@ input[type="radio"]:checked + .radio::before {
   border: 0;
   color: var(--basic-white);
   padding: 11px 0 9px 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .modal-area {
@@ -1964,6 +1968,8 @@ input[type="radio"]:checked + .radio::before {
 
 .modal-map {
   width: 940px;
+  border: none;
+  height: 449px;
 }
 
 .filter-li_radio {
@@ -1975,10 +1981,6 @@ input[type="radio"]:checked + .radio::before {
 .modal-order {
   width: 620px;
   height: 282px;
-}
-
-.modal-order-links {
-  background: var(--basic-header-bg);
 }
 
 .order-add {
