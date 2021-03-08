@@ -408,6 +408,8 @@ img {
   width: 300px;
   height: 123px;
   padding: 20px 23px;
+  position: relative;
+  overflow: hidden;
 }
 
 .benefits-name {
@@ -595,10 +597,12 @@ img {
   width: 220px;
   height: 145px;
   text-align: center;
-  display: table-cell;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   object-fit: contain;
+  /* display: block; */
 }
 
 .manufacturers-item:hover {
@@ -702,6 +706,7 @@ img {
   font-size: 30px;
   line-height: 30px;
   margin: 0;
+  margin-top: 2px;
 }
 
 .description-about {
@@ -728,6 +733,7 @@ img {
   font-size: 30px;
   line-height: 30px;
   margin: 0;
+  margin-top: 5px;
 }
 
 .contacts-about {
@@ -763,7 +769,7 @@ img {
   margin: 0;
   width: 330px;
   color: var(--basic-light-grey);
-  margin-top: 26px;
+  margin-top: 23px;
 }
 
 .footer-categories__list {
@@ -1152,7 +1158,7 @@ button.button-submit {}
 }
 
 .description {
-  padding: 70px 0;
+  padding: 69px 0;
 }
 
 .logo {
@@ -1329,7 +1335,7 @@ button.button-submit {}
   height: 265px;
 }
 
-.slider-buttons {
+.slider-arrow {
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -1337,7 +1343,7 @@ button.button-submit {}
   width: 100%;
 }
 
-.slider-buttons button {
+.slider-arrow button {
   padding: 0;
   background: url(../img/icon-left.svg) no-repeat;
   border: none;
@@ -1389,7 +1395,7 @@ button.button-submit {}
 
 .mini-map {
   display: block;
-  margin: 30px 0 25px 0;
+  margin: 32px 0 20px 0;
 }
 
 .cooperation-list {
@@ -1561,11 +1567,6 @@ button.button-submit {}
   fill: var(--basic-red);
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-  display: none;
-}
-
 .checkbox::before {
   content: "";
   display: inline-block;
@@ -1703,7 +1704,7 @@ input[type="radio"]:checked + .radio::before {
 }
 
 .cart {
-  padding: 9px 15px 9px 46px;
+  padding: 9px 12px 9px 24px;
 }
 
 .order {
@@ -1874,7 +1875,7 @@ input[type="radio"]:checked + .radio::before {
   z-index: 50;
   border-top: 7px solid var(
   --basic-red);
-  /* display: none; */
+  display: none;
   filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.75));
 }
 
@@ -2016,4 +2017,27 @@ input[type="radio"]:checked + .radio::before {
   background: var(--basic-white);
   color: var(--basic-black);
   width: 192px;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 33px;
+  left: 295px;
+  z-index: 20;
+}
+
+
+.slider-dots button {
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  background-color: var(--basic-white);
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.slider-dots .current-dot {
+  background: var(--basic-red);
 }
