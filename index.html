@@ -390,7 +390,7 @@
             <a href="#" class="mini-map">
               <img src="img/map.jpg" alt="Карта" width="300" height="158">
             </a>
-            <a href="#" class="button button-map">Заблудились? Напишите нам!</a>
+            <a href="#" class="button button-message">Заблудились? Напишите нам!</a>
           </div>
         </div>
       </div>
@@ -479,16 +479,16 @@
     <div class="modal-data">
       <form action="https://echo.htmlacademy.ru" class="form-grid">
 
-        <div class="modal-name">
+        <div class="modal-login-name">
           <div>
             <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Имя Фамилия" class="modal-input">
+            <input type="text" id="name" placeholder="Имя Фамилия" class="modal-input modal-name">
           </div>
           <div>
 
             <label for="mail">Ваш e-mail:</label>
 
-            <input type="email" id="mail" placeholder="email@example.com" class="modal-input">
+            <input type="email" id="mail" placeholder="email@example.com" class="modal-input modal-email">
           </div>
         </div>
         <div class="modal-area">
@@ -497,19 +497,27 @@
           <textarea name="message-to" id="message" cols="30" rows="10" placeholder="В свободной форме" class="message-to"></textarea>
         </div>
         <div class="modal-button">
+         
           <button class="modal-button-link" type="submit">Отправить</button>
+          
         </div>
         <button class="modal-close" aria-label="Закрыть" type="button"></button>
       </form>
+      
 
     </div>
-
+    
   </section>
   <section class="modal modal-map">
     <h2 class="visually-hidden">Интерактивная карта</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5930179813554!2d30.320984315917798!3d59.93889516904023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fceae1c83%3A0xe98045a979b09260!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE3LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1614810812266!5m2!1sru!2sua" width="940" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="940" height="450" style="border:0;" allowfullscreen="" loading="lazy"></>
     <button class="modal-close" aria-label="Закрыть" type="button"></button>
   </section>
+
+  <script src="js/map.js"></script>
+  <script src="js/login.js"></script>
+
+
 </body>
 
 </html>

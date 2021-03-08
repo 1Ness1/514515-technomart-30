@@ -1389,7 +1389,7 @@ button.button-submit {}
   display: block;
 }
 
-.button-map {
+.button-message {
   width: 300px;
 }
 
@@ -1867,7 +1867,6 @@ input[type="radio"]:checked + .radio::before {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  margin: auto;
   color: var(
   --basic-black);
   background: var(
@@ -1882,9 +1881,7 @@ input[type="radio"]:checked + .radio::before {
 .modal-form {
   width: 620px;
   height: 430px;
-
-
-
+  /* display: none; */
 }
 
 .modal-button {
@@ -1908,7 +1905,7 @@ input[type="radio"]:checked + .radio::before {
   display: grid;
 }
 
-.modal-name {
+.modal-login-name {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 46px 80px 13px 80px;
@@ -1971,6 +1968,7 @@ input[type="radio"]:checked + .radio::before {
   width: 940px;
   border: none;
   height: 449px;
+  /* display: none; */
 }
 
 .filter-li_radio {
@@ -2040,4 +2038,55 @@ input[type="radio"]:checked + .radio::before {
 
 .slider-dots .current-dot {
   background: var(--basic-red);
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -150%);
+    
+  }
+
+  70% {
+    transform: translate(-50%, -30%);
+  }
+
+  90% {
+    transform: translate(-50%, -45%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-47%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-53%, -50%);
+  }
 }
