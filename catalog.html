@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-body">
   <header class="main-header">
@@ -98,6 +98,7 @@
             <div class="account-funk">
               <a href="#" class="account-link">Мои заказы</a>
               <a href="#" class="account-link">Личный кабинет</a>
+              
             </div>
           </div>
         </div>
@@ -114,6 +115,7 @@
             <li class="nav-item"><a href="#" class="nav-link">Спецпредложения</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Доставка</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+            
           </ul>
         </nav>
       </div>
@@ -124,7 +126,7 @@
       <div class="crumbs">
         <ul class="crumbs-list">
           <li class="crumbs-item">
-            <a href="index.html" class="crumbs-link" aria-label="Сортировка по убыванию"><img src="img/icon-home.svg" alt="#"></a>
+            <a href="index.html" class="crumbs-link" aria-label="Ссылка домой"><img src="img/icon-home.svg" alt="#"></a>
           </li> 
           <li class="crumbs-item">
             <a href="#" class="crumbs-link">каталог</a>
@@ -146,11 +148,7 @@
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
-                    <div class="bar" style="
-                    width: 75%;
-                    margin-left: 10%">
-
-                    </div>
+                    <div class="bar" style="width: 75%;margin-left: 10%"></div>
                     <div class="toggle toggle-min" tabindex="0" style="left: 10%"></div>
                     <div class="toggle toggle-max" tabindex="0" style="left: 70%"></div>
                   </div>
@@ -159,12 +157,12 @@
 
                 <div class="price-controls">
                   <label for="min-price">
-                    <input type="text" name="min-price" value="0">  
+                    <input type="text" name="min-price" value="0" id="min-price">  
                     
                   </label>
                   &mdash;
                   <label for="max-price">
-                    <input type="text" name="max-price" value="30000">
+                    <input type="text" name="max-price" value="30000" id="max-price">
                   </label>
                 </div>
               </div>
@@ -174,25 +172,26 @@
               <legend class="filter-name">Производители:</legend>
               <ul class="filter-list">
                 <li class="filter-li">
-                  <input type="checkbox" name="bosch" id="filter-bosch" checked value="a1" class="visually-hidden">
-                  <label for="filter-bosch" class="filter-manufacturers__item checkbox" tabindex="0">Bosch</label>
+                  <input type="checkbox" name="bosch" id="filter-bosch" checked value="a1" class="visually-hidden checkbox-input">
+                  <label for="filter-bosch" class="filter-manufacturers__item checkbox" >Bosch</label>
                 </li>
                 <li class="filter-li">
-                  <input type="checkbox" name="interskol" id="filter-interskol" value="a2" class="visually-hidden">
-                  <label for="filter-interskol" class="filter-manufacturers__item checkbox" tabindex="0">Интерскол</label>
+                  <input type="checkbox" name="interskol" id="filter-interskol" value="a2" class="visually-hidden checkbox-input">
+                  <label for="filter-interskol" class="filter-manufacturers__item checkbox">Интерскол</label>
                 </li>
                 <li class="filter-li">
-                  <input type="checkbox" name="makita" id="filter-makita" checked value="a3" class="visually-hidden">
-                  <label for="filter-makita" class="filter-manufacturers__item checkbox" tabindex="0">Makita</label>
+                  <input type="checkbox" name="makita" id="filter-makita" checked value="a3" class="visually-hidden checkbox-input">
+                  <label for="filter-makita" class="filter-manufacturers__item checkbox">Makita</label>
                 </li>
                 <li class="filter-li">
-                  <input type="checkbox" name="dewalt" id="filter-dewalt" value="a4" class="visually-hidden">
-                  <label for="filter-dewalt" class="filter-manufacturers__item checkbox" tabindex="0">Dewalt</label>
+                  <input type="checkbox" name="dewalt" id="filter-dewalt" value="a4" class="visually-hidden checkbox-input">
+                  <label for="filter-dewalt" class="filter-manufacturers__item checkbox">Dewalt</label>
                 </li>
                 <li class="filter-li">
-                  <input type="checkbox" name="hitachi" id="filter-hitachi" value="a5" class="visually-hidden">
-                  <label for="filter-hitachi" class="filter-manufacturers__item checkbox" tabindex="0">Hitachi</label>
+                  <input type="checkbox" name="hitachi" id="filter-hitachi" value="a5" class="visually-hidden checkbox-input">
+                  <label for="filter-hitachi" class="filter-manufacturers__item checkbox">Hitachi</label>
                 </li>
+                
               </ul>
             </fieldset>
             <div class="line"></div>
@@ -200,12 +199,12 @@
               <legend class="filter-name">Питание:</legend>
               <ul class="filter-list">
                 <li class="filter-li_radio">
-                  <input type="radio" name="power" value="battery" id="filter-battery" checked class="visually-hidden">
-                  <label for="filter-battery" class="filter-manufacturers__item radio" tabindex="0">Аккумуляторные</label>
+                  <input type="radio" name="power" value="battery" id="filter-battery" checked class="visually-hidden radio-input">
+                  <label for="filter-battery" class="filter-manufacturers__item radio">Аккумуляторные</label>
                 </li>
                 <li class="filter-li_radio">
-                  <input type="radio" name="power" value="mains" id="filter-mains" class="visually-hidden">
-                  <label for="filter-mains" class="filter-manufacturers__item radio" tabindex="0">Сетевые</label>
+                  <input type="radio" name="power" value="mains" id="filter-mains" class="visually-hidden radio-input">
+                  <label for="filter-mains" class="filter-manufacturers__item radio">Сетевые</label>
                 </li>
               </ul>
             </fieldset>
@@ -243,10 +242,7 @@
               <li class="products-item ">
                 <div class="card-image">
                   <img src="img/item-1.png" alt="#" width="144" height="128">
-                  <div class="card-links">
-                    <a href="#" class="buy">купить</a>
-                    <a href="#" class="in-bookmark">в закладки</a>
-                  </div>
+                  
                 </div>
                 <div class="card-text">
                   <a href="#" class="products-name">
@@ -255,14 +251,16 @@
                   <p class="old-price grey-text">30500 Р.</p>
                   <a href="#" class="button-buy">25500 Р.</a>
                 </div>
+                <div class="card-links">
+                  <a href="#" class="buy">купить</a>
+                  <a href="#" class="in-bookmark">в закладки</a>
+                </div>
               </li>
+            
               <li class="products-item">
                 <div class="card-image">
                   <img src="img/item-1.png" alt="#" width="144" height="128">
-                  <div class="card-links">
-                    <a href="#" class="buy">купить</a>
-                    <a href="#" class="in-bookmark">в закладки</a>
-                  </div>
+                  
                 </div>
                 <div class="card-text">
                   <a href="#" class="products-name">
@@ -270,15 +268,16 @@
                   </a>
                   <p class="old-price grey-text">30500 Р.</p>
                   <a href="#" class="button-buy">25500 Р.</a>
+                </div>
+                <div class="card-links">
+                  <a href="#" class="buy">купить</a>
+                  <a href="#" class="in-bookmark">в закладки</a>
                 </div>
               </li>
               <li class="products-item new">
                 <div class="card-image">
                   <img src="img/item-1.png" alt="#" width="144" height="128">
-                  <div class="card-links">
-                    <a href="#" class="buy">купить</a>
-                    <a href="#" class="in-bookmark">в закладки</a>
-                  </div>
+                  
                 </div>
                 <div class="card-text">
                   <a href="#" class="products-name">
@@ -286,15 +285,16 @@
                   </a>
                   <p class="old-price grey-text">30500 Р.</p>
                   <a href="#" class="button-buy">25500 Р.</a>
+                </div>
+                <div class="card-links">
+                  <a href="#" class="buy">купить</a>
+                  <a href="#" class="in-bookmark">в закладки</a>
                 </div>
               </li>
               <li class="products-item new">
                 <div class="card-image item-3">
                   <img src="img/item-3.png" alt="#" width="127" height="112">
-                  <div class="card-links">
-                    <a href="#" class="buy">купить</a>
-                    <a href="#" class="in-bookmark">в закладки</a>
-                  </div>
+                  
                 </div>
                 <div class="card-text">
                   <a href="#" class="products-name">
@@ -303,14 +303,15 @@
                   <p class="old-price grey-text">22500 Р.</p>
                   <a href="#" class="button-buy">15500 Р.</a>
                 </div>
+                <div class="card-links">
+                  <a href="#" class="buy">купить</a>
+                  <a href="#" class="in-bookmark">в закладки</a>
+                </div>
               </li>
               <li class="products-item">
                 <div class="card-image">
                   <img src="img/item-1.png" alt="#" width="144" height="128">
-                  <div class="card-links">
-                    <a href="#" class="buy">купить</a>
-                    <a href="#" class="in-bookmark">в закладки</a>
-                  </div>
+                  
                 </div>
                 <div class="card-text">
                   <a href="#" class="products-name">
@@ -319,14 +320,15 @@
                   <p class="old-price grey-text">30500 Р.</p>
                   <a href="#" class="button-buy">25500 Р.</a>
                 </div>
+                <div class="card-links">
+                  <a href="#" class="buy">купить</a>
+                  <a href="#" class="in-bookmark">в закладки</a>
+                </div>
               </li>
               <li class="products-item new">
                 <div class="card-image item-3">
                   <img src="img/item-3.png" alt="#" width="127" height="112">
-                  <div class="card-links">
-                    <a href="#" class="buy">купить</a>
-                    <a href="#" class="in-bookmark">в закладки</a>
-                  </div>
+                  
                 </div>
                 <div class="card-text">
                   <a href="#" class="products-name">
@@ -335,14 +337,15 @@
                   <p class="old-price grey-text op0">30500 Р.</p>
                   <a href="#" class="button-buy">12500 Р.</a>
                 </div>
+                <div class="card-links">
+                  <a href="#" class="buy">купить</a>
+                  <a href="#" class="in-bookmark">в закладки</a>
+                </div>
               </li>
               <li class="products-item new">
                 <div class="card-image item-3">
                   <img src="img/item-3.png" alt="#" width="127" height="112">
-                  <div class="card-links">
-                    <a href="#" class="buy">купить</a>
-                    <a href="#" class="in-bookmark">в закладки</a>
-                  </div>
+                  
                 </div>
                 <div class="card-text">
                   <a href="#" class="products-name">
@@ -351,14 +354,15 @@
                   <p class="old-price grey-text">22500 Р.</p>
                   <a href="#" class="button-buy">15500 Р.</a>
                 </div>
+                <div class="card-links">
+                  <a href="#" class="buy">купить</a>
+                  <a href="#" class="in-bookmark">в закладки</a>
+                </div>
               </li>
               <li class="products-item">
                 <div class="card-image">
                   <img src="img/item-1.png" alt="#" width="144" height="128">
-                  <div class="card-links">
-                    <a href="#" class="buy">купить</a>
-                    <a href="#" class="in-bookmark">в закладки</a>
-                  </div>
+                 
                 </div>
                 <div class="card-text">
                   <a href="#" class="products-name">
@@ -367,30 +371,28 @@
                   <p class="old-price grey-text">30500 Р.</p>
                   <a href="#" class="button-buy">25500 Р.</a>
                 </div>
+                <div class="card-links">
+                  <a href="#" class="buy">купить</a>
+                  <a href="#" class="in-bookmark">в закладки</a>
+                </div>
               </li>
               <li class="products-item new">
                 <div class="card-image item-3">
                   <img src="img/item-3.png" alt="#" width="127" height="112">
-                  <div class="card-links">
-                    <a href="#" class="buy">купить</a>
-                    <a href="#" class="in-bookmark">в закладки</a>
-                  </div>
+                  
                 </div>
 
 
                 <div class="card-text">
                   <a href="#" class="products-name">
                     Перфоратор BOSCH BFG 2000
-
                   </a>
-                  <!-- на всякий случай, тут не добавлял ссылки, если что потом просто оберну. 						-->
                   <p class="old-price grey-text op0">30500 Р.</p>
-
-                  <!-- strike -->
                   <a href="#" class="button-buy">12500 Р.</a>
-
-
-
+                </div>
+                <div class="card-links">
+                  <a href="#" class="buy">купить</a>
+                  <a href="#" class="in-bookmark">в закладки</a>
                 </div>
               </li>
             </ul>

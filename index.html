@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-body">
   <header class="main-header">
@@ -27,7 +27,7 @@
             </a>
           </div>
           <div class="toolbar-item">
-            <form action="action=https://echo.htmlacademy.ru" class="toolbar-search">
+            <form action="https://echo.htmlacademy.ru" class="toolbar-search">
               <label for="search">
               </label>
               <input type="search" placeholder="Поиск:" id="search" class="input-search" aria-label="Поиск">
@@ -146,7 +146,7 @@
         </div>
         <div class="slider">
           <ul class="slider-list">
-            <li class="slider-item  slide slide-current">
+            <li class="slider-item slide slide-current">
               <div class="slider-perforator">
                 <div class="slider-perforator__top">
                   <div class="slider-text">
@@ -220,10 +220,7 @@
           <li class="products-item item-drill">
             <div class="card-image-drill">
               <img src="img/item-2.png" alt="#" width="184" height="164">
-              <div class="card-links">
-                <a href="#" class="buy">купить</a>
-                <a href="#" class="in-bookmark">в закладки</a>
-              </div>
+              
             </div>
             <div class="card-text">
               <a href="#" class="products-name">
@@ -232,14 +229,15 @@
               <p class="old-price grey-text">30500 Р.</p>
               <a href="#" class="button-buy button-buy-item2">25500 Р.</a>
             </div>
+            <div class="card-links">
+              <a href="#" class="buy">купить</a>
+              <a href="#" class="in-bookmark">в закладки</a>
+            </div>
           </li>
           <li class="products-item new">
             <div class="card-image item-3">
               <img src="img/item-3.png" alt="#" width="127" height="112">
-              <div class="card-links">
-                <a href="#" class="buy">купить</a>
-                <a href="#" class="in-bookmark">в закладки</a>
-              </div>
+              
             </div>
             <div class="card-text">
               <a href="#" class="products-name">
@@ -248,14 +246,15 @@
               <p class="old-price grey-text">22500 Р.</p>
               <a href="#" class="button-buy">12500 Р.</a>
             </div>
+            <div class="card-links">
+              <a href="#" class="buy">купить</a>
+              <a href="#" class="in-bookmark">в закладки</a>
+            </div>
           </li>
           <li class="products-item">
             <div class="card-image">
               <img src="img/item-1.png" alt="#" width="144" height="128">
-              <div class="card-links">
-                <a href="#" class="buy">купить</a>
-                <a href="#" class="in-bookmark">в закладки</a>
-              </div>
+              
             </div>
             <div class="card-text">
               <a href="#" class="products-name">
@@ -264,14 +263,15 @@
               <p class="old-price grey-text">30500 Р.</p>
               <a href="#" class="button-buy">25500 Р.</a>
             </div>
+            <div class="card-links">
+              <a href="#" class="buy">купить</a>
+              <a href="#" class="in-bookmark">в закладки</a>
+            </div>
           </li>
           <li class="products-item new">
             <div class="card-image item-3">
               <img src="img/item-3.png" alt="#" width="127" height="112">
-              <div class="card-links">
-                <a href="#" class="buy">купить</a>
-                <a href="#" class="in-bookmark">в закладки</a>
-              </div>
+              
             </div>
             <div class="card-text">
               <a href="#" class="products-name">
@@ -279,6 +279,10 @@
               </a>
               <p class="old-price grey-text">22500 Р.</p>
               <a href="#" class="button-buy">12500 Р.</a>
+            </div>
+            <div class="card-links">
+              <a href="#" class="buy">купить</a>
+              <a href="#" class="in-bookmark">в закладки</a>
             </div>
           </li>
         </ul>
@@ -387,10 +391,10 @@
             <p class="contacts-title">Контакты</p>
             <p class="contacts-about">Вы можете забрать товар сами,
               заехав в наш офис:</p>
-            <a href="#" class="mini-map">
+            <a href="map.html" class="mini-map">
               <img src="img/map.jpg" alt="Большая Конюшенная ул., 17, Санкт-Петербург, Россия, 191186" width="300" height="158">
             </a>
-            <a href="#" class="button button-message">Заблудились? Напишите нам!</a>
+            <a href="form.html" class="button button-message">Заблудились? Напишите нам!</a>
           </div>
         </div>
       </div>
@@ -409,7 +413,7 @@
               </a>
             </div>
             <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная,
-              д. 19/8 +7 (812) 555-05-55</p>
+              д. <br><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
           </div>
           <div class="footer-categories">
             <ul class="footer-categories__list">
@@ -475,26 +479,26 @@
     </div>
   </footer>
   <section class="modal modal-form">
-    <h2 class="visually-hidden" aria-hidden="true" focusable="false">Модальное окно данных</h2>
+    <h2 class="visually-hidden">Модальное окно данных</h2>
     <div class="modal-data">
       <form action="https://echo.htmlacademy.ru" class="form-grid">
 
         <div class="modal-login-name">
           <div>
             <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Имя Фамилия" class="modal-input modal-name">
+            <input type="text" id="name" placeholder="Имя Фамилия" class="modal-input modal-name" name="Имя">
           </div>
           <div>
 
             <label for="mail">Ваш e-mail:</label>
 
-            <input type="email" id="mail" placeholder="email@example.com" class="modal-input modal-email">
+            <input type="email" id="mail" placeholder="email@example.com" class="modal-input modal-email" name="email">
           </div>
         </div>
         <div class="modal-area">
           <label for="message">Текст письма:</label>
 
-          <textarea name="message-to" id="message" cols="30" rows="10" placeholder="В свободной форме" class="message-to"></textarea>
+          <textarea name="message-to" id="message" cols="30" rows="10" placeholder="В свободной форме" class="message-to" name="сообщение"></textarea>
         </div>
         <div class="modal-button">
          
@@ -510,14 +514,12 @@
   </section>
   <section class="modal modal-map">
     <h2 class="visually-hidden">Интерактивная карта</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5930179813545!2d30.3209843159178!3d59.938895169040244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fceae1c83%3A0xe98045a979b09260!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE3LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1615362968877!5m2!1sru!2sua" width="940" height="460" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5930179813545!2d30.3209843159178!3d59.938895169040244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fceae1c83%3A0xe98045a979b09260!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE3LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1615362968877!5m2!1sru!2sua" width="940" height="460" allowfullscreen="" loading="lazy" class="map-iframe"></iframe>
     
     <button class="modal-close" aria-label="Закрыть" type="button"></button>
   </section>
 
-  <script src="js/map.js"></script>
-  <script src="js/login.js"></script>
-
+  <script src="js/script.min.js"></script>
 
 </body>
 
