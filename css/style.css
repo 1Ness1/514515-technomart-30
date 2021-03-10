@@ -2090,3 +2090,7 @@ input[type="radio"]:checked + .radio::before {
     transform: translate(-53%, -50%);
   }
 }
+
+.modal-map iframe {
+  background: url(../img/map_iframe.jpg) no-repeat center center;
+}
