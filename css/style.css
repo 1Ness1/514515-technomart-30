@@ -31,6 +31,7 @@
   --basic-light-grey: #F3F7F9;
   --basic-title-catalog: #F2F6F8;
   --basic-grey: #F1F5F7;
+  --basic-grey-text: #9A9A9A;
   --basic-login-grey: #C5C5C5;
   --basic-white: #ffffff;
 
@@ -40,8 +41,14 @@
   --socials-background: #212A3A;
   --header-ico1ns: #69717F;
   --footer-gold: #FFD180;
-
+  --range-controls: #d7dcde;
   --basic-buy-link: #63A63E;
+  --bar: #00ca74;
+  --toggle: #ababab;
+  --toggle-shadow: #cfcfcf;
+  --price-control-input: #283136;
+  --buy-botton: #367315;
+  --buy-botton-active: #518534;
   --svg-grey: rgba(105, 113, 127, 0.5);
 
   --box-shadow-hover: rgba(0, 0, 0, 0.24);
@@ -342,7 +349,7 @@ img {
   align-items: center;
   text-align: center;
   width: 940px;
-  box-shadow: inset 0px -5px 0px #293449;
+  box-shadow: inset 0px -5px 0px var(--basic-dark-blue);
   margin: 0;
   padding: 2px 26px;
   flex-wrap: wrap;
@@ -1239,7 +1246,7 @@ img {
   position: relative;
   height: 80px;
   margin-bottom: 6px;
-  background-color: #F7F3EC;
+  background-color: var(--title-catalog-purple);
   padding-right: 20px;
   padding-left: 20px;
   border-radius: 5px;
@@ -1248,23 +1255,23 @@ img {
 
 .range-controls .scale {
   height: 2px;
-  background: #d7dcde;
+  background: var(--range-controls);
 }
 
 .range-controls .bar {
   width: 70%;
   height: 2px;
-  background: #00ca74;
+  background: var(--bar);
 }
 
 .range-controls .toggle {
   width: 20px;
   height: 20px;
   padding: 0;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
+  border: 8px solid var(--basic-white);
+  background-color: var(--toggle);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 var(--toggle-shadow);
   position: absolute;
   top: 31px;
   left: 0;
@@ -1292,7 +1299,7 @@ img {
   width: 95px;
   padding: 10px;
   text-align: center;
-  color: #283136;
+  color: var(--price-control-input);
   border: none;
   border-radius: 5px;
   background: var(--title-catalog-purple);
@@ -1630,7 +1637,7 @@ img {
   width: 135px;
   height: 38px;
   border-radius: 2px;
-  box-shadow: inset 0px -3px 0px #367315;
+  box-shadow: inset 0px -3px 0px var(--buy-botton);
   color: var(--basic-white);
   text-align: center;
   padding: 10px 0;
@@ -1657,11 +1664,11 @@ img {
 
 
 .buy:hover {
-  background: #5FBB2D;
+  background: var(--basic-green-hover);
 }
 
 .buy:active {
-  background: #518534;
+  background: var(--buy-botton-active);
 }
 
 .buy::after {
@@ -1728,7 +1735,7 @@ img {
 
 
 .grey-text {
-  color: #9A9A9A;
+  color: var(--basic-grey-text);
   font-size: 17px;
   line-height: 18px;
   margin: 0;
@@ -2020,7 +2027,7 @@ img {
   width: 10px;
   height: 10px;
   background-color: var(--basic-white);
-  border: 2px solid #ffffff;
+  border: 2px solid var(--basic-white);
   border-radius: 50%;
   cursor: pointer;
   margin-right: 5px;
