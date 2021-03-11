@@ -43,6 +43,16 @@
 
   --basic-buy-link: #63A63E;
   --svg-grey: rgba(105, 113, 127, 0.5);
+
+  --box-shadow-hover: rgba(0, 0, 0, 0.24);
+  --fill-hover: rgba(255, 255, 255, 0.3);
+  --white-hover: rgba(255, 255, 255, 1);
+  --benefits-hover: rgba(197, 197, 197, 0.5);
+  --benefits-active:rgba(169, 169, 169, 0.3);
+  --slider-perfor-top: rgba(0, 0, 0, 0.3);
+  --manufacturers-hover: rgba(0, 0, 0, 0.15);
+  --sorting-link-hover: rgba(0, 0, 0, 1);
+  --filter-drop-shadow: rgba(0, 0, 0, 0.75);
 }
 
 *,
@@ -60,7 +70,7 @@ img {
   min-width: 940px;
   margin: 0;
   padding: 0;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum','Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
 }
@@ -113,7 +123,7 @@ img {
   fill: var(--basic-white);
   background-color: var(--basic-red);
   padding: 12px 55px 14px 55px;
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: inset 0px -5px 0px var(--box-shadow-hover);
   width: 220px;
 }
 
@@ -144,7 +154,7 @@ img {
 
 
 .toolbar-search:hover {
-  fill: rgba(255, 255, 255, 0.3);
+  fill: var(--fill-hover);
 }
 
 .toolbar__search:active {
@@ -181,7 +191,7 @@ img {
   border: 0;
   outline: none;
   color: var(--basic-white);
-  fill: rgba(255, 255, 255, 0.3);
+  fill: var(--fill-hover);
 }
 
 .toolbar-link:active {
@@ -211,7 +221,7 @@ img {
 }
 
 .toolbar-link:hover {
-  fill: rgba(255, 255, 255, 1);
+  fill: var(--white-hover);
 }
 
 /*... TOP HEADER ...*/
@@ -423,18 +433,18 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   padding: 10px 0;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--fill-hover);
   width: 135px;
   text-align: center;
   font-weight: 400;
 }
 
 .benefits-link:hover {
-  background-color: rgba(197, 197, 197, 0.5);
+  background-color: var(--benefits-hover);
 }
 
 .benefits-link:active {
-  background-color: rgba(169, 169, 169, 0.3);
+  background-color: var(--benefits-active);
 }
 
 .benefits-icon {
@@ -455,7 +465,7 @@ img {
 
 .slider-perforator__top {
   color: var(--basic-white);
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--slider-perfor-top);
   height: 105px;
 }
 
@@ -570,7 +580,7 @@ img {
 }
 
 .products-item:hover {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px var(--box-shadow-hover);
 }
 
 .manufacturers-list {
@@ -596,7 +606,7 @@ img {
 }
 
 .manufacturers-item:hover {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px var(--manufacturers-hover);
 }
 
 .manufacturers-item:active {
@@ -939,10 +949,6 @@ img {
   cursor: pointer;
 }
 
-.filter-manufacturers__item:focus + label {
-
-}
-
 .filter-list {
   padding: 0;
   margin-top: 12px;
@@ -1003,12 +1009,12 @@ img {
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--slider-perfor-top);
   text-decoration: underline dotted var(--basic-red);
 }
 
 .sorting-link:hover {
-  color: rgba(0, 0, 0, 1);
+  color: var(--sorting-link-hover);
 }
 
 .sorting-link:active {
@@ -1150,7 +1156,7 @@ img {
 .logo {
   fill: var(--basic-white);
   background-color: var(--basic-red);
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: inset 0px -5px 0px var(--box-shadow-hover);
   display: block;
   height: 47px;
   padding: 12px 0;
@@ -1202,7 +1208,7 @@ img {
 }
 
 .line {
-  background: rgba(0, 0, 0, 0.1);
+  background: var(--sorting-link-hover);
   width: 220px;
   height: 1px;
 }
@@ -1856,13 +1862,12 @@ img {
   transform: translate(-50%, -50%);
   color: var(
   --basic-black);
-  background: var(
-  --basic-white);
+  background: var(--basic-white);
   z-index: 50;
   border-top: 7px solid var(
   --basic-red);
   display: none;
-  filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.75));
+  filter: drop-shadow(0px 20px 20px var(--filter-drop-shadow));
 }
 
 .modal-form {
